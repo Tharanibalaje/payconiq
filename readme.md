@@ -1,0 +1,1 @@
+test -Dcucumber.options=" --tags @test"

@@ -1,0 +1,175 @@
+17:21:04.218 request:
+1 > PATCH https://api.github.com/gists/b3124c4f7c714fd89f8d621ddc11dd2c
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 278
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api.github.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+{"description":"Hello World Examples","files":{"hello_world_ruby.txt":{"content":"Run `ruby hello_world.rb` or `python hello_world.py` to print Hello World","filename":"hello_world.md"},"hello_world_python.txt":null,"new_file.txt":{"content":"This is a new placeholder file."}}}
+
+17:21:04.825 response time in milliseconds: 604.77
+1 < 404
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type
+1 < Content-Security-Policy: default-src 'none'
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 14 Aug 2019 15:21:08 GMT
+1 < Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+1 < Server: GitHub.com
+1 < Status: 404 Not Found
+1 < Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: deny
+1 < X-GitHub-Media-Type: github.v3; format=json
+1 < X-GitHub-Request-Id: 4A71:22B5:6E8F6:D03F5:5D5426E4
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 41
+1 < X-RateLimit-Reset: 1565799668
+1 < X-XSS-Protection: 1; mode=block
+{"message":"Not Found","documentation_url":"https://developer.github.com/v3/gists/#edit-a-gist"}
+
+
+
+lzdGIzMTI0YzRmN2M3MTRmZDg5ZjhkNjIxZGRjMTFkZDJj","git_pull_url":"https://gist.github.com/b3124c4f7c714fd89f8d621ddc11dd2c.git","git_push_url":"https://gist.github.com/b3124c4f7c714fd89f8d621ddc11dd2c.git","html_url":"https://gist.github.com/b3124c4f7c714fd89f8d621ddc11dd2c","files":{"hello_world.md":{"filename":"hello_world.md","type":"text/markdown","language":"Markdown","raw_url":"https://gist.githubusercontent.com/Tharanibalaje/b3124c4f7c714fd89f8d621ddc11dd2c/raw/4221bb4b942568c4e3ab253022d2b7fec7844f21/hello_world.md","size":73,"truncated":false,"content":"Run `ruby hello_world.rb` or `python hello_world.py` to print Hello World"},"hello_world.py":{"filename":"hello_world.py","type":"application/x-python","language":"Python","raw_url":"https://gist.githubusercontent.com/Tharanibalaje/b3124c4f7c714fd89f8d621ddc11dd2c/raw/99c1bf3a345505c2e6195198d5f8c36267de570b/hello_world.py","size":199,"truncated":false,"content":"class HelloWorld:\n\n    def __init__(self, name):\n        self.name = name.capitalize()\n       \n    def sayHi(self):\n        print \"Hello \" + self.name + \"!\"\n\nhello = HelloWorld(\"world\")\nhello.sayHi()"},"hello_world.rb":{"filename":"hello_world.rb","type":"application/x-ruby","language":"Ruby","raw_url":"https://gist.githubusercontent.com/Tharanibalaje/b3124c4f7c714fd89f8d621ddc11dd2c/raw/ee8be6ed38a708a8a32437bd6e9ef17fc2ef06b0/hello_world.rb","size":167,"truncated":false,"content":"class HelloWorld\n   def initialize(name)\n      @name = name.capitalize\n   end\n   def sayHi\n      puts \"Hello !\"\n   end\nend\n\nhello = HelloWorld.new(\"World\")\nhello.sayHi"},"new_file.txt":{"filename":"new_file.txt","type":"text/plain","language":"Text","raw_url":"https://gist.githubusercontent.com/Tharanibalaje/b3124c4f7c714fd89f8d621ddc11dd2c/raw/56ab7bdf864fa11c1e16acce2a5116171514d2d1/new_file.txt","size":31,"truncated":false,"content":"This is a new placeholder file."}},"public":false,"created_at":"2019-08-14T12:00:11Z","updated_at":"2019-08-14T12:00:14Z","description":"Hello World Examples","comments":0,"user":null,"comments_url":"https://api.github.com/gists/b3124c4f7c714fd89f8d621ddc11dd2c/comments","owner":{"login":"Tharanibalaje","id":53902380,"node_id":"MDQ6VXNlcjUzOTAyMzgw","avatar_url":"https://avatars2.githubusercontent.com/u/53902380?v=4","gravatar_id":"","url":"https://api.github.com/users/Tharanibalaje","html_url":"https://github.com/Tharanibalaje","followers_url":"https://api.github.com/users/Tharanibalaje/followers","following_url":"https://api.github.com/users/Tharanibalaje/following{/other_user}","gists_url":"https://api.github.com/users/Tharanibalaje/gists{/gist_id}","starred_url":"https://api.github.com/users/Tharanibalaje/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Tharanibalaje/subscriptions","organizations_url":"https://api.github.com/users/Tharanibalaje/orgs","repos_url":"https://api.github.com/users/Tharanibalaje/repos","events_url":"https://api.github.com/users/Tharanibalaje/events{/privacy}","received_events_url":"https://api.github.com/users/Tharanibalaje/received_events","type":"User","site_admin":false},"forks":[],"history":[{"user":{"login":"Tharanibalaje","id":53902380,"node_id":"MDQ6VXNlcjUzOTAyMzgw","avatar_url":"https://avatars2.githubusercontent.com/u/53902380?v=4","gravatar_id":"","url":"https://api.github.com/users/Tharanibalaje","html_url":"https://github.com/Tharanibalaje","followers_url":"https://api.github.com/users/Tharanibalaje/followers","following_url":"https://api.github.com/users/Tharanibalaje/following{/other_user}","gists_url":"https://api.github.com/users/Tharanibalaje/gists{/gist_id}","starred_url":"https://api.github.com/users/Tharanibalaje/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Tharanibalaje/subscriptions","organizations_url":"https://api.github.com/users/Tharanibalaje/orgs","repos_url":"https://api.github.com/users/Tharanibalaje/repos","events_url":"https://api.github.com/users/Tharanibalaje/events{/privacy}","received_events_url":"https://api.github.com/users/Tharanibalaje/received_events","type":"User","site_admin":false},"version":"65e9294a91c7c7638d86a7d3911a158d4d4df551","committed_at":"2019-08-14T12:00:13Z","change_status":{"total":4,"additions":2,"deletions":2},"url":"https://api.github.com/gists/b3124c4f7c714fd89f8d621ddc11dd2c/65e9294a91c7c7638d86a7d3911a158d4d4df551"},{"user":{"login":"Tharanibalaje","id":53902380,"node_id":"MDQ6VXNlcjUzOTAyMzgw","avatar_url":"https://avatars2.githubusercontent.com/u/53902380?v=4","gravatar_id":"","url":"https://api.github.com/users/Tharanibalaje","html_url":"https://github.com/Tharanibalaje","followers_url":"https://api.github.com/users/Tharanibalaje/followers","following_url":"https://api.github.com/users/Tharanibalaje/following{/other_user}","gists_url":"https://api.github.com/users/Tharanibalaje/gists{/gist_id}","starred_url":"https://api.github.com/users/Tharanibalaje/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Tharanibalaje/subscriptions","organizations_url":"https://api.github.com/users/Tharanibalaje/orgs","repos_url":"https://api.github.com/users/Tharanibalaje/repos","events_url":"https://api.github.com/users/Tharanibalaje/events{/privacy}","received_events_url":"https://api.github.com/users/Tharanibalaje/received_events","type":"User","site_admin":false},"version":"9b56cad0fde6f2742c00d1980fa7d9a8325e9739","committed_at":"2019-08-14T12:00:11Z","change_status":{"total":23,"additions":23,"deletions":0},"url":"https://api.github.com/gists/b3124c4f7c714fd89f8d621ddc11dd2c/9b56cad0fde6f2742c00d1980fa7d9a8325e9739"}],"truncated":false}
+
+"truncated":false}
+
+14:02:16.973 status code was: 200, expected: 401, response time: 1019, url: https://api.github.com/gists/b3124c4f7c714fd89f8d621ddc11dd2c, response: {"url":"https://api.github.com/gists/b3124c4f7c714fd89f8d621ddc11dd2c","forks_url":"https://api.github.com/gists/b3124c4f7c714fd89f8d621ddc11dd2c/forks","commits_url":"https://api.github.com/gists/b3124c4f7c714fd89f8d621ddc11dd2c/commits","id":"b3124c4f7c714fd89f8d621ddc11dd2c","node_id":"MDQ6R2lzdGIzMTI0YzRmN2M3MTRmZDg5ZjhkNjIxZGRjMTFkZDJj","git_pull_url":"https://gist.github.com/b3124c4f7c714fd89f8d621ddc11dd2c.git","git_push_url":"https://gist.github.com/b3124c4f7c714fd89f8d621ddc11dd2c.git","html_url":"https://gist.github.com/b3124c4f7c714fd89f8d621ddc11dd2c","files":{"hello_world.md":{"filename":"hello_world.md","type":"text/markdown","language":"Markdown","raw_url":"https://gist.githubusercontent.com/Tharanibalaje/b3124c4f7c714fd89f8d621ddc11dd2c/raw/4221bb4b942568c4e3ab253022d2b7fec7844f21/hello_world.md","size":73,"truncated":false,"content":"Run `ruby hello_world.rb` or `python hello_world.py` to print Hello World"},"hello_world.py":{"filename":"hello_world.py","type":"application/x-python","language":"Python","raw_url":"https://gist.githubusercontent.com/Tharanibalaje/b3124c4f7c714fd89f8d621ddc11dd2c/raw/99c1bf3a345505c2e6195198d5f8c36267de570b/hello_world.py","size":199,"truncated":false,"content":"class HelloWorld:\n\n    def __init__(self, name):\n        self.name = name.capitalize()\n       \n    def sayHi(self):\n        print \"Hello \" + self.name + \"!\"\n\nhello = HelloWorld(\"world\")\nhello.sayHi()"},"hello_world.rb":{"filename":"hello_world.rb","type":"application/x-ruby","language":"Ruby","raw_url":"https://gist.githubusercontent.com/Tharanibalaje/b3124c4f7c714fd89f8d621ddc11dd2c/raw/ee8be6ed38a708a8a32437bd6e9ef17fc2ef06b0/hello_world.rb","size":167,"truncated":false,"content":"class HelloWorld\n   def initialize(name)\n      @name = name.capitalize\n   end\n   def sayHi\n      puts \"Hello !\"\n   end\nend\n\nhello = HelloWorld.new(\"World\")\nhello.sayHi"},"new_file.txt":{"filename":"new_file.txt","type":"text/plain","language":"Text","raw_url":"https://gist.githubusercontent.com/Tharanibalaje/b3124c4f7c714fd89f8d621ddc11dd2c/raw/56ab7bdf864fa11c1e16acce2a5116171514d2d1/new_file.txt","size":31,"truncated":false,"content":"This is a new placeholder file."}},"public":false,"created_at":"2019-08-14T12:00:11Z","updated_at":"2019-08-14T12:00:14Z","description":"Hello World Examples","comments":0,"user":null,"comments_url":"https://api.github.com/gists/b3124c4f7c714fd89f8d621ddc11dd2c/comments","owner":{"login":"Tharanibalaje","id":53902380,"node_id":"MDQ6VXNlcjUzOTAyMzgw","avatar_url":"https://avatars2.githubusercontent.com/u/53902380?v=4","gravatar_id":"","url":"https://api.github.com/users/Tharanibalaje","html_url":"https://github.com/Tharanibalaje","followers_url":"https://api.github.com/users/Tharanibalaje/followers","following_url":"https://api.github.com/users/Tharanibalaje/following{/other_user}","gists_url":"https://api.github.com/users/Tharanibalaje/gists{/gist_id}","starred_url":"https://api.github.com/users/Tharanibalaje/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Tharanibalaje/subscriptions","organizations_url":"https://api.github.com/users/Tharanibalaje/orgs","repos_url":"https://api.github.com/users/Tharanibalaje/repos","events_url":"https://api.github.com/users/Tharanibalaje/events{/privacy}","received_events_url":"https://api.github.com/users/Tharanibalaje/received_events","type":"User","site_admin":false},"forks":[],"history":[{"user":{"login":"Tharanibalaje","id":53902380,"node_id":"MDQ6VXNlcjUzOTAyMzgw","avatar_url":"https://avatars2.githubusercontent.com/u/53902380?v=4","gravatar_id":"","url":"https://api.github.com/users/Tharanibalaje","html_url":"https://github.com/Tharanibalaje","followers_url":"https://api.github.com/users/Tharanibalaje/followers","following_url":"https://api.github.com/users/Tharanibalaje/following{/other_user}","gists_url":"https://api.github.com/users/Tharanibalaje/gists{/gist_id}","starred_url":"https://api.github.com/users/Tharanibalaje/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Tharanibalaje/subscriptions","organizations_url":"https://api.github.com/users/Tharanibalaje/orgs","repos_url":"https://api.github.com/users/Tharanibalaje/repos","events_url":"https://api.github.com/users/Tharanibalaje/events{/privacy}","received_events_url":"https://api.github.com/users/Tharanibalaje/received_events","type":"User","site_admin":false},"version":"65e9294a91c7c7638d86a7d3911a158d4d4df551","committed_at":"2019-08-14T12:00:13Z","change_status":{"total":4,"additions":2,"deletions":2},"url":"https://api.github.com/gists/b3124c4f7c714fd89f8d621ddc11dd2c/65e9294a91c7c7638d86a7d3911a158d4d4df551"},{"user":{"login":"Tharanibalaje","id":53902380,"node_id":"MDQ6VXNlcjUzOTAyMzgw","avatar_url":"https://avatars2.githubusercontent.com/u/53902380?v=4","gravatar_id":"","url":"https://api.github.com/users/Tharanibalaje","html_url":"https://github.com/Tharanibalaje","followers_url":"https://api.github.com/users/Tharanibalaje/followers","following_url":"https://api.github.com/users/Tharanibalaje/following{/other_user}","gists_url":"https://api.github.com/users/Tharanibalaje/gists{/gist_id}","starred_url":"https://api.github.com/users/Tharanibalaje/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Tharanibalaje/subscriptions","organizations_url":"https://api.github.com/users/Tharanibalaje/orgs","repos_url":"https://api.github.com/users/Tharanibalaje/repos","events_url":"https://api.github.com/users/Tharanibalaje/events{/privacy}","received_events_url":"https://api.github.com/users/Tharanibalaje/received_events","type":"User","site_admin":false},"version":"9b56cad0fde6f2742c00d1980fa7d9a8325e9739","committed_at":"2019-08-14T12:00:11Z","change_status":{"total":23,"additions":23,"deletions":0},"url":"https://api.github.com/gists/b3124c4f7c714fd89f8d621ddc11dd2c/9b56cad0fde6f2742c00d1980fa7d9a8325e9739"}],"truncated":false}
+ec0c095b6500d7ffadc1
+3 > Accept-Encoding: gzip,deflate
+3 > Authorization: Basic dGhhcmFuaWJhbGFqZToxOGJhZjZiMmVlZDk5ZThjYWRiZjg1ODdkYjJmMjI5YWVkNTYyZGU0
+3 > Connection: Keep-Alive
+3 > Content-Length: 278
+3 > Content-Type: application/json; charset=UTF-8
+3 > Host: api.github.com
+3 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+{"description":"Hello World Examples","files":{"hello_world_ruby.txt":{"content":"Run `ruby hello_world.rb` or `python hello_world.py` to print Hello World","filename":"hello_world.md"},"hello_world_python.txt":null,"new_file.txt":{"content":"This is a new placeholder file."}}}
+
+13:44:04.005 response time in milliseconds: 1523.48
+3 < 200
+3 < Access-Control-Allow-Origin: *
+3 < Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type
+3 < Cache-Control: private, max-age=60, s-maxage=60
+3 < Content-Security-Policy: default-src 'none'
+3 < Content-Type: application/json; charset=utf-8
+3 < Date: Wed, 14 Aug 2019 11:44:07 GMT
+3 < ETag: W/"2b1c21b0ab9dfd0e8aeefc2fcb0f0836"
+3 < Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+3 < Server: GitHub.com
+3 < Status: 200 OK
+3 < Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+3 < Transfer-Encoding: chunked
+3 < Vary: [Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding]
+3 < X-Accepted-OAuth-Scopes: 
+3 < X-Content-Type-Options: nosniff
+3 < X-Frame-Options: deny
+3 < X-GitHub-Media-Type: github.v3; format=json
+3 < X-GitHub-Request-Id: A7F4:7E8C:5B465:7BC6A:5D53F406
+3 < X-OAuth-Scopes: gist
+3 < X-RateLimit-Limit: 5000
+3 < X-RateLimit-Remaining: 4998
+3 < X-RateLimit-Reset: 1565786644
+3 < X-XSS-Protection: 1; mode=block
+{"url":"https://api.github.com/gists/9b9cc97760b8ec0c095b6500d7ffadc1","forks_url":"https://api.github.com/gists/9b9cc97760b8ec0c095b6500d7ffadc1/forks","commits_url":"https://api.github.com/gists/9b9cc97760b8ec0c095b6500d7ffadc1/commits","id":"9b9cc97760b8ec0c095b6500d7ffadc1","node_id":"MDQ6R2lzdDliOWNjOTc3NjBiOGVjMGMwOTViNjUwMGQ3ZmZhZGMx","git_pull_url":"https://gist.github.com/9b9cc97760b8ec0c095b6500d7ffadc1.git","git_push_url":"https://gist.github.com/9b9cc97760b8ec0c095b6500d7ffadc1.git","html_url":"https://gist.github.com/9b9cc97760b8ec0c095b6500d7ffadc1","files":{"hello_world.md":{"filename":"hello_world.md","type":"text/markdown","language":"Markdown","raw_url":"https://gist.githubusercontent.com/Tharanibalaje/9b9cc97760b8ec0c095b6500d7ffadc1/raw/4221bb4b942568c4e3ab253022d2b7fec7844f21/hello_world.md","size":73,"truncated":false,"content":"Run `ruby hello_world.rb` or `python hello_world.py` to print Hello World"},"hello_world.py":{"filename":"hello_world.py","type":"application/x-python","language":"Python","raw_url":"https://gist.githubusercontent.com/Tharanibalaje/9b9cc97760b8ec0c095b6500d7ffadc1/raw/99c1bf3a345505c2e6195198d5f8c36267de570b/hello_world.py","size":199,"truncated":false,"content":"class HelloWorld:\n\n    def __init__(self, name):\n        self.name = name.capitalize()\n       \n    def sayHi(self):\n        print \"Hello \" + self.name + \"!\"\n\nhello = HelloWorld(\"world\")\nhello.sayHi()"},"hello_world.rb":{"filename":"hello_world.rb","type":"application/x-ruby","language":"Ruby","raw_url":"https://gist.githubusercontent.com/Tharanibalaje/9b9cc97760b8ec0c095b6500d7ffadc1/raw/ee8be6ed38a708a8a32437bd6e9ef17fc2ef06b0/hello_world.rb","size":167,"truncated":false,"content":"class HelloWorld\n   def initialize(name)\n      @name = name.capitalize\n   end\n   def sayHi\n      puts \"Hello !\"\n   end\nend\n\nhello = HelloWorld.new(\"World\")\nhello.sayHi"},"new_file.txt":{"filename":"new_file.txt","type":"text/plain","language":"Text","raw_url":"https://gist.githubusercontent.com/Tharanibalaje/9b9cc97760b8ec0c095b6500d7ffadc1/raw/56ab7bdf864fa11c1e16acce2a5116171514d2d1/new_file.txt","size":31,"truncated":false,"content":"This is a new placeholder file."}},"public":true,"created_at":"2019-08-14T11:44:04Z","updated_at":"2019-08-14T11:44:06Z","description":"Hello World Examples","comments":0,"user":null,"comments_url":"https://api.github.com/gists/9b9cc97760b8ec0c095b6500d7ffadc1/comments","owner":{"login":"Tharanibalaje","id":53902380,"node_id":"MDQ6VXNlcjUzOTAyMzgw","avatar_url":"https://avatars2.githubusercontent.com/u/53902380?v=4","gravatar_id":"","url":"https://api.github.com/users/Tharanibalaje","html_url":"https://github.com/Tharanibalaje","followers_url":"https://api.github.com/users/Tharanibalaje/followers","following_url":"https://api.github.com/users/Tharanibalaje/following{/other_user}","gists_url":"https://api.github.com/users/Tharanibalaje/gists{/gist_id}","starred_url":"https://api.github.com/users/Tharanibalaje/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Tharanibalaje/subscriptions","organizations_url":"https://api.github.com/users/Tharanibalaje/orgs","repos_url":"https://api.github.com/users/Tharanibalaje/repos","events_url":"https://api.github.com/users/Tharanibalaje/events{/privacy}","received_events_url":"https://api.github.com/users/Tharanibalaje/received_events","type":"User","site_admin":false},"forks":[],"history":[{"user":{"login":"Tharanibalaje","id":53902380,"node_id":"MDQ6VXNlcjUzOTAyMzgw","avatar_url":"https://avatars2.githubusercontent.com/u/53902380?v=4","gravatar_id":"","url":"https://api.github.com/users/Tharanibalaje","html_url":"https://github.com/Tharanibalaje","followers_url":"https://api.github.com/users/Tharanibalaje/followers","following_url":"https://api.github.com/users/Tharanibalaje/following{/other_user}","gists_url":"https://api.github.com/users/Tharanibalaje/gists{/gist_id}","starred_url":"https://api.github.com/users/Tharanibalaje/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Tharanibalaje/subscriptions","organizations_url":"https://api.github.com/users/Tharanibalaje/orgs","repos_url":"https://api.github.com/users/Tharanibalaje/repos","events_url":"https://api.github.com/users/Tharanibalaje/events{/privacy}","received_events_url":"https://api.github.com/users/Tharanibalaje/received_events","type":"User","site_admin":false},"version":"a8fa6c7745ce0f7cf9f43ca13e8f67ebcc5a93cd","committed_at":"2019-08-14T11:44:06Z","change_status":{"total":4,"additions":2,"deletions":2},"url":"https://api.github.com/gists/9b9cc97760b8ec0c095b6500d7ffadc1/a8fa6c7745ce0f7cf9f43ca13e8f67ebcc5a93cd"},{"user":{"login":"Tharanibalaje","id":53902380,"node_id":"MDQ6VXNlcjUzOTAyMzgw","avatar_url":"https://avatars2.githubusercontent.com/u/53902380?v=4","gravatar_id":"","url":"https://api.github.com/users/Tharanibalaje","html_url":"https://github.com/Tharanibalaje","followers_url":"https://api.github.com/users/Tharanibalaje/followers","following_url":"https://api.github.com/users/Tharanibalaje/following{/other_user}","gists_url":"https://api.github.com/users/Tharanibalaje/gists{/gist_id}","starred_url":"https://api.github.com/users/Tharanibalaje/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Tharanibalaje/subscriptions","organizations_url":"https://api.github.com/users/Tharanibalaje/orgs","repos_url":"https://api.github.com/users/Tharanibalaje/repos","events_url":"https://api.github.com/users/Tharanibalaje/events{/privacy}","received_events_url":"https://api.github.com/users/Tharanibalaje/received_events","type":"User","site_admin":false},"version":"85a980c89ea68ed1b703894d76f01843f84037af","committed_at":"2019-08-14T11:44:03Z","change_status":{"total":23,"additions":23,"deletions":0},"url":"https://api.github.com/gists/9b9cc97760b8ec0c095b6500d7ffadc1/85a980c89ea68ed1b703894d76f01843f84037af"}],"truncated":false}
+
+13:44:04.009 request:
+4 > GET https://api.github.com/gists/9b9cc97760b8ec0c095b6500d7ffadc1
+4 > Accept-Encoding: gzip,deflate
+4 > Authorization: Basic dGhhcmFuaWJhbGFqZToxOGJhZjZiMmVlZDk5ZThjYWRiZjg1ODdkYjJmMjI5YWVkNTYyZGU0
+4 > Connection: Keep-Alive
+4 > Host: api.github.com
+4 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+13:44:04.749 response time in milliseconds: 736.56
+4 < 200
+4 < Access-Control-Allow-Origin: *
+4 < Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type
+4 < Cache-Control: private, max-age=60, s-maxage=60
+4 < Content-Security-Policy: default-src 'none'
+4 < Content-Type: application/json; charset=utf-8
+4 < Date: Wed, 14 Aug 2019 11:44:08 GMT
+4 < ETag: W/"7ade8d8b4f9db099f764be4803e61b8b"
+4 < Last-Modified: Wed, 14 Aug 2019 11:44:07 GMT
+4 < Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+4 < Server: GitHub.com
+4 < Status: 200 OK
+4 < Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+4 < Transfer-Encoding: chunked
+4 < Vary: [Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding]
+4 < X-Accepted-OAuth-Scopes: 
+4 < X-Content-Type-Options: nosniff
+4 < X-Frame-Options: deny
+4 < X-GitHub-Media-Type: github.v3; format=json
+4 < X-GitHub-Request-Id: A7ED:4021:180D82:223FF9:5D53F408
+4 < X-OAuth-Scopes: gist
+4 < X-RateLimit-Limit: 5000
+4 < X-RateLimit-Remaining: 4997
+4 < X-RateLimit-Reset: 1565786644
+4 < X-XSS-Protection: 1; mode=block
+{"url":"https://api.github.com/gists/9b9cc97760b8ec0c095b6500d7ffadc1","forks_url":"https://api.github.com/gists/9b9cc97760b8ec0c095b6500d7ffadc1/forks","commits_url":"https://api.github.com/gists/9b9cc97760b8ec0c095b6500d7ffadc1/commits","id":"9b9cc97760b8ec0c095b6500d7ffadc1","node_id":"MDQ6R2lzdDliOWNjOTc3NjBiOGVjMGMwOTViNjUwMGQ3ZmZhZGMx","git_pull_url":"https://gist.github.com/9b9cc97760b8ec0c095b6500d7ffadc1.git","git_push_url":"https://gist.github.com/9b9cc97760b8ec0c095b6500d7ffadc1.git","html_url":"https://gist.github.com/9b9cc97760b8ec0c095b6500d7ffadc1","files":{"hello_world.md":{"filename":"hello_world.md","type":"text/markdown","language":"Markdown","raw_url":"https://gist.githubusercontent.com/Tharanibalaje/9b9cc97760b8ec0c095b6500d7ffadc1/raw/4221bb4b942568c4e3ab253022d2b7fec7844f21/hello_world.md","size":73,"truncated":false,"content":"Run `ruby hello_world.rb` or `python hello_world.py` to print Hello World"},"hello_world.py":{"filename":"hello_world.py","type":"application/x-python","language":"Python","raw_url":"https://gist.githubusercontent.com/Tharanibalaje/9b9cc97760b8ec0c095b6500d7ffadc1/raw/99c1bf3a345505c2e6195198d5f8c36267de570b/hello_world.py","size":199,"truncated":false,"content":"class HelloWorld:\n\n    def __init__(self, name):\n        self.name = name.capitalize()\n       \n    def sayHi(self):\n        print \"Hello \" + self.name + \"!\"\n\nhello = HelloWorld(\"world\")\nhello.sayHi()"},"hello_world.rb":{"filename":"hello_world.rb","type":"application/x-ruby","language":"Ruby","raw_url":"https://gist.githubusercontent.com/Tharanibalaje/9b9cc97760b8ec0c095b6500d7ffadc1/raw/ee8be6ed38a708a8a32437bd6e9ef17fc2ef06b0/hello_world.rb","size":167,"truncated":false,"content":"class HelloWorld\n   def initialize(name)\n      @name = name.capitalize\n   end\n   def sayHi\n      puts \"Hello !\"\n   end\nend\n\nhello = HelloWorld.new(\"World\")\nhello.sayHi"},"new_file.txt":{"filename":"new_file.txt","type":"text/plain","language":"Text","raw_url":"https://gist.githubusercontent.com/Tharanibalaje/9b9cc97760b8ec0c095b6500d7ffadc1/raw/56ab7bdf864fa11c1e16acce2a5116171514d2d1/new_file.txt","size":31,"truncated":false,"content":"This is a new placeholder file."}},"public":true,"created_at":"2019-08-14T11:44:04Z","updated_at":"2019-08-14T11:44:07Z","description":"Hello World Examples","comments":0,"user":null,"comments_url":"https://api.github.com/gists/9b9cc97760b8ec0c095b6500d7ffadc1/comments","owner":{"login":"Tharanibalaje","id":53902380,"node_id":"MDQ6VXNlcjUzOTAyMzgw","avatar_url":"https://avatars2.githubusercontent.com/u/53902380?v=4","gravatar_id":"","url":"https://api.github.com/users/Tharanibalaje","html_url":"https://github.com/Tharanibalaje","followers_url":"https://api.github.com/users/Tharanibalaje/followers","following_url":"https://api.github.com/users/Tharanibalaje/following{/other_user}","gists_url":"https://api.github.com/users/Tharanibalaje/gists{/gist_id}","starred_url":"https://api.github.com/users/Tharanibalaje/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Tharanibalaje/subscriptions","organizations_url":"https://api.github.com/users/Tharanibalaje/orgs","repos_url":"https://api.github.com/users/Tharanibalaje/repos","events_url":"https://api.github.com/users/Tharanibalaje/events{/privacy}","received_events_url":"https://api.github.com/users/Tharanibalaje/received_events","type":"User","site_admin":false},"forks":[],"history":[{"user":{"login":"Tharanibalaje","id":53902380,"node_id":"MDQ6VXNlcjUzOTAyMzgw","avatar_url":"https://avatars2.githubusercontent.com/u/53902380?v=4","gravatar_id":"","url":"https://api.github.com/users/Tharanibalaje","html_url":"https://github.com/Tharanibalaje","followers_url":"https://api.github.com/users/Tharanibalaje/followers","following_url":"https://api.github.com/users/Tharanibalaje/following{/other_user}","gists_url":"https://api.github.com/users/Tharanibalaje/gists{/gist_id}","starred_url":"https://api.github.com/users/Tharanibalaje/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Tharanibalaje/subscriptions","organizations_url":"https://api.github.com/users/Tharanibalaje/orgs","repos_url":"https://api.github.com/users/Tharanibalaje/repos","events_url":"https://api.github.com/users/Tharanibalaje/events{/privacy}","received_events_url":"https://api.github.com/users/Tharanibalaje/received_events","type":"User","site_admin":false},"version":"a8fa6c7745ce0f7cf9f43ca13e8f67ebcc5a93cd","committed_at":"2019-08-14T11:44:06Z","change_status":{"total":4,"additions":2,"deletions":2},"url":"https://api.github.com/gists/9b9cc97760b8ec0c095b6500d7ffadc1/a8fa6c7745ce0f7cf9f43ca13e8f67ebcc5a93cd"},{"user":{"login":"Tharanibalaje","id":53902380,"node_id":"MDQ6VXNlcjUzOTAyMzgw","avatar_url":"https://avatars2.githubusercontent.com/u/53902380?v=4","gravatar_id":"","url":"https://api.github.com/users/Tharanibalaje","html_url":"https://github.com/Tharanibalaje","followers_url":"https://api.github.com/users/Tharanibalaje/followers","following_url":"https://api.github.com/users/Tharanibalaje/following{/other_user}","gists_url":"https://api.github.com/users/Tharanibalaje/gists{/gist_id}","starred_url":"https://api.github.com/users/Tharanibalaje/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Tharanibalaje/subscriptions","organizations_url":"https://api.github.com/users/Tharanibalaje/orgs","repos_url":"https://api.github.com/users/Tharanibalaje/repos","events_url":"https://api.github.com/users/Tharanibalaje/events{/privacy}","received_events_url":"https://api.github.com/users/Tharanibalaje/received_events","type":"User","site_admin":false},"version":"85a980c89ea68ed1b703894d76f01843f84037af","committed_at":"2019-08-14T11:44:03Z","change_status":{"total":23,"additions":23,"deletions":0},"url":"https://api.github.com/gists/9b9cc97760b8ec0c095b6500d7ffadc1/85a980c89ea68ed1b703894d76f01843f84037af"}],"truncated":false}
+
+13:44:04.755 request:
+5 > DELETE https://api.github.com/gists/9b9cc97760b8ec0c095b6500d7ffadc1
+5 > Accept-Encoding: gzip,deflate
+5 > Authorization: Basic dGhhcmFuaWJhbGFqZToxOGJhZjZiMmVlZDk5ZThjYWRiZjg1ODdkYjJmMjI5YWVkNTYyZGU0
+5 > Connection: Keep-Alive
+5 > Host: api.github.com
+5 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+13:44:06.724 response time in milliseconds: 1967.03
+5 < 204
+5 < Access-Control-Allow-Origin: *
+5 < Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type
+5 < Content-Security-Policy: default-src 'none'
+5 < Content-Type: application/octet-stream
+5 < Date: Wed, 14 Aug 2019 11:44:10 GMT
+5 < Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+5 < Server: GitHub.com
+5 < Status: 204 No Content
+5 < Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+5 < Vary: Accept-Encoding
+5 < X-Accepted-OAuth-Scopes: 
+5 < X-Content-Type-Options: nosniff
+5 < X-Frame-Options: deny
+5 < X-GitHub-Media-Type: github.v3; format=json
+5 < X-GitHub-Request-Id: 8DBF:03E2:A7D25:EB88F:5D53F409
+5 < X-OAuth-Scopes: gist
+5 < X-RateLimit-Limit: 5000
+5 < X-RateLimit-Remaining: 4996
+5 < X-RateLimit-Reset: 1565786644
+5 < X-XSS-Protection: 1; mode=block
+
+13:44:06.729 request:
+6 > GET https://api.github.com/gists/9b9cc97760b8ec0c095b6500d7ffadc1
+6 > Accept-Encoding: gzip,deflate
+6 > Authorization: Basic dGhhcmFuaWJhbGFqZToxOGJhZjZiMmVlZDk5ZThjYWRiZjg1ODdkYjJmMjI5YWVkNTYyZGU0
+6 > Connection: Keep-Alive
+6 > Host: api.github.com
+6 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+13:44:07.587 response time in milliseconds: 857.07
+6 < 404
+6 < Access-Control-Allow-Origin: *
+6 < Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type
+6 < Content-Security-Policy: default-src 'none'
+6 < Content-Type: application/json; charset=utf-8
+6 < Date: Wed, 14 Aug 2019 11:44:11 GMT
+6 < Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+6 < Server: GitHub.com
+6 < Status: 404 Not Found
+6 < Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+6 < Transfer-Encoding: chunked
+6 < X-Accepted-OAuth-Scopes: repo
+6 < X-Content-Type-Options: nosniff
+6 < X-Frame-Options: deny
+6 < X-GitHub-Media-Type: github.v3; format=json
+6 < X-GitHub-Request-Id: 8DBC:0243:5CE26:7EA41:5D53F40A
+6 < X-OAuth-Scopes: gist
+6 < X-RateLimit-Limit: 5000
+6 < X-RateLimit-Remaining: 4995
+6 < X-RateLimit-Reset: 1565786644
+6 < X-XSS-Protection: 1; mode=block
+{"message":"Not Found","documentation_url":"https://developer.github.com/v3/gists/#get-a-single-gist"}
+

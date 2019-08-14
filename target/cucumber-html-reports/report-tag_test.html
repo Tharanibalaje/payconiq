@@ -1,0 +1,2681 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Tag: @test</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>demo</td>
+            <td>14 Aug 2019, 17:21</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@test</td>
+          <td      class="passed"    >59</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">59</td>
+
+          <td  class="passed"    >8</td>
+          <td >0</td>
+          <td class="total">8</td>
+
+          <td class="duration" data-value="15287332100">15.287</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_src-test-resources-test-feature.html">src/test/resources/test.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.514</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To verify a Read operation of all gists</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/gists'</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = authorization</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">1.512</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>17:21:04.217 request:
+1 &gt; GET https://api.github.com/gists
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Basic dGhhcmFuaWJhbGFqZTozOWI4MWVlYTNkNWJlMWYwOGViNjg4MzQ0MTI3YmMwYjE2NWQxMTgz
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api.github.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+17:21:04.910 response time in milliseconds: 689.42
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type
+1 &lt; Cache-Control: private, max-age=60, s-maxage=60
+1 &lt; Content-Security-Policy: default-src 'none'
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 14 Aug 2019 15:21:08 GMT
+1 &lt; ETag: W/&quot;f9e1ab32014d3f60a6e1964c41ecfd50&quot;
+1 &lt; Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+1 &lt; Server: GitHub.com
+1 &lt; Status: 200 OK
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept, Authorization, Cookie, X-GitHub-OTP
+1 &lt; X-Accepted-OAuth-Scopes: 
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: deny
+1 &lt; X-GitHub-Media-Type: github.v3; format=json
+1 &lt; X-GitHub-Request-Id: 4A6E:747F:6895E:C216B:5D5426E4
+1 &lt; X-OAuth-Scopes: gist
+1 &lt; X-RateLimit-Limit: 5000
+1 &lt; X-RateLimit-Remaining: 4998
+1 &lt; X-RateLimit-Reset: 1565799668
+1 &lt; X-XSS-Protection: 1; mode=block
+[{&quot;url&quot;:&quot;https://api.github.com/gists/b3124c4f7c714fd89f8d621ddc11dd2c&quot;,&quot;forks_url&quot;:&quot;https://api.github.com/gists/b3124c4f7c714fd89f8d621ddc11dd2c/forks&quot;,&quot;commits_url&quot;:&quot;https://api.github.com/gists/b3124c4f7c714fd89f8d621ddc11dd2c/commits&quot;,&quot;id&quot;:&quot;b3124c4f7c714fd89f8d621ddc11dd2c&quot;,&quot;node_id&quot;:&quot;MDQ6R2lzdGIzMTI0YzRmN2M3MTRmZDg5ZjhkNjIxZGRjMTFkZDJj&quot;,&quot;git_pull_url&quot;:&quot;https://gist.github.com/b3124c4f7c714fd89f8d621ddc11dd2c.git&quot;,&quot;git_push_url&quot;:&quot;https://gist.github.com/b3124c4f7c714fd89f8d621ddc11dd2c.git&quot;,&quot;html_url&quot;:&quot;https://gist.github.com/b3124c4f7c714fd89f8d621ddc11dd2c&quot;,&quot;files&quot;:{&quot;hello_world.md&quot;:{&quot;filename&quot;:&quot;hello_world.md&quot;,&quot;type&quot;:&quot;text/markdown&quot;,&quot;language&quot;:&quot;Markdown&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/b3124c4f7c714fd89f8d621ddc11dd2c/raw/4221bb4b942568c4e3ab253022d2b7fec7844f21/hello_world.md&quot;,&quot;size&quot;:73},&quot;hello_world.py&quot;:{&quot;filename&quot;:&quot;hello_world.py&quot;,&quot;type&quot;:&quot;application/x-python&quot;,&quot;language&quot;:&quot;Python&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/b3124c4f7c714fd89f8d621ddc11dd2c/raw/99c1bf3a345505c2e6195198d5f8c36267de570b/hello_world.py&quot;,&quot;size&quot;:199},&quot;hello_world.rb&quot;:{&quot;filename&quot;:&quot;hello_world.rb&quot;,&quot;type&quot;:&quot;application/x-ruby&quot;,&quot;language&quot;:&quot;Ruby&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/b3124c4f7c714fd89f8d621ddc11dd2c/raw/ee8be6ed38a708a8a32437bd6e9ef17fc2ef06b0/hello_world.rb&quot;,&quot;size&quot;:167},&quot;new_file.txt&quot;:{&quot;filename&quot;:&quot;new_file.txt&quot;,&quot;type&quot;:&quot;text/plain&quot;,&quot;language&quot;:&quot;Text&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/b3124c4f7c714fd89f8d621ddc11dd2c/raw/56ab7bdf864fa11c1e16acce2a5116171514d2d1/new_file.txt&quot;,&quot;size&quot;:31}},&quot;public&quot;:false,&quot;created_at&quot;:&quot;2019-08-14T12:00:11Z&quot;,&quot;updated_at&quot;:&quot;2019-08-14T12:00:14Z&quot;,&quot;description&quot;:&quot;Hello World Examples&quot;,&quot;comments&quot;:0,&quot;user&quot;:null,&quot;comments_url&quot;:&quot;https://api.github.com/gists/b3124c4f7c714fd89f8d621ddc11dd2c/comments&quot;,&quot;owner&quot;:{&quot;login&quot;:&quot;Tharanibalaje&quot;,&quot;id&quot;:53902380,&quot;node_id&quot;:&quot;MDQ6VXNlcjUzOTAyMzgw&quot;,&quot;avatar_url&quot;:&quot;https://avatars2.githubusercontent.com/u/53902380?v=4&quot;,&quot;gravatar_id&quot;:&quot;&quot;,&quot;url&quot;:&quot;https://api.github.com/users/Tharanibalaje&quot;,&quot;html_url&quot;:&quot;https://github.com/Tharanibalaje&quot;,&quot;followers_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/followers&quot;,&quot;following_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/following{/other_user}&quot;,&quot;gists_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/gists{/gist_id}&quot;,&quot;starred_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/starred{/owner}{/repo}&quot;,&quot;subscriptions_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/subscriptions&quot;,&quot;organizations_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/orgs&quot;,&quot;repos_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/repos&quot;,&quot;events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/events{/privacy}&quot;,&quot;received_events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/received_events&quot;,&quot;type&quot;:&quot;User&quot;,&quot;site_admin&quot;:false},&quot;truncated&quot;:false},{&quot;url&quot;:&quot;https://api.github.com/gists/25dd0aee085e111b37d878ec74639f8e&quot;,&quot;forks_url&quot;:&quot;https://api.github.com/gists/25dd0aee085e111b37d878ec74639f8e/forks&quot;,&quot;commits_url&quot;:&quot;https://api.github.com/gists/25dd0aee085e111b37d878ec74639f8e/commits&quot;,&quot;id&quot;:&quot;25dd0aee085e111b37d878ec74639f8e&quot;,&quot;node_id&quot;:&quot;MDQ6R2lzdDI1ZGQwYWVlMDg1ZTExMWIzN2Q4NzhlYzc0NjM5Zjhl&quot;,&quot;git_pull_url&quot;:&quot;https://gist.github.com/25dd0aee085e111b37d878ec74639f8e.git&quot;,&quot;git_push_url&quot;:&quot;https://gist.github.com/25dd0aee085e111b37d878ec74639f8e.git&quot;,&quot;html_url&quot;:&quot;https://gist.github.com/25dd0aee085e111b37d878ec74639f8e&quot;,&quot;files&quot;:{&quot;hello_world.md&quot;:{&quot;filename&quot;:&quot;hello_world.md&quot;,&quot;type&quot;:&quot;text/markdown&quot;,&quot;language&quot;:&quot;Markdown&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/25dd0aee085e111b37d878ec74639f8e/raw/4221bb4b942568c4e3ab253022d2b7fec7844f21/hello_world.md&quot;,&quot;size&quot;:73},&quot;hello_world.py&quot;:{&quot;filename&quot;:&quot;hello_world.py&quot;,&quot;type&quot;:&quot;application/x-python&quot;,&quot;language&quot;:&quot;Python&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/25dd0aee085e111b37d878ec74639f8e/raw/99c1bf3a345505c2e6195198d5f8c36267de570b/hello_world.py&quot;,&quot;size&quot;:199},&quot;hello_world.rb&quot;:{&quot;filename&quot;:&quot;hello_world.rb&quot;,&quot;type&quot;:&quot;application/x-ruby&quot;,&quot;language&quot;:&quot;Ruby&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/25dd0aee085e111b37d878ec74639f8e/raw/ee8be6ed38a708a8a32437bd6e9ef17fc2ef06b0/hello_world.rb&quot;,&quot;size&quot;:167},&quot;new_file.txt&quot;:{&quot;filename&quot;:&quot;new_file.txt&quot;,&quot;type&quot;:&quot;text/plain&quot;,&quot;language&quot;:&quot;Text&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/25dd0aee085e111b37d878ec74639f8e/raw/56ab7bdf864fa11c1e16acce2a5116171514d2d1/new_file.txt&quot;,&quot;size&quot;:31}},&quot;public&quot;:true,&quot;created_at&quot;:&quot;2019-08-14T11:53:25Z&quot;,&quot;updated_at&quot;:&quot;2019-08-14T11:53:28Z&quot;,&quot;description&quot;:&quot;Hello World Examples&quot;,&quot;comments&quot;:0,&quot;user&quot;:null,&quot;comments_url&quot;:&quot;https://api.github.com/gists/25dd0aee085e111b37d878ec74639f8e/comments&quot;,&quot;owner&quot;:{&quot;login&quot;:&quot;Tharanibalaje&quot;,&quot;id&quot;:53902380,&quot;node_id&quot;:&quot;MDQ6VXNlcjUzOTAyMzgw&quot;,&quot;avatar_url&quot;:&quot;https://avatars2.githubusercontent.com/u/53902380?v=4&quot;,&quot;gravatar_id&quot;:&quot;&quot;,&quot;url&quot;:&quot;https://api.github.com/users/Tharanibalaje&quot;,&quot;html_url&quot;:&quot;https://github.com/Tharanibalaje&quot;,&quot;followers_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/followers&quot;,&quot;following_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/following{/other_user}&quot;,&quot;gists_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/gists{/gist_id}&quot;,&quot;starred_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/starred{/owner}{/repo}&quot;,&quot;subscriptions_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/subscriptions&quot;,&quot;organizations_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/orgs&quot;,&quot;repos_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/repos&quot;,&quot;events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/events{/privacy}&quot;,&quot;received_events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/received_events&quot;,&quot;type&quot;:&quot;User&quot;,&quot;site_admin&quot;:false},&quot;truncated&quot;:false},{&quot;url&quot;:&quot;https://api.github.com/gists/293098459e427d7d24b81724725c9927&quot;,&quot;forks_url&quot;:&quot;https://api.github.com/gists/293098459e427d7d24b81724725c9927/forks&quot;,&quot;commits_url&quot;:&quot;https://api.github.com/gists/293098459e427d7d24b81724725c9927/commits&quot;,&quot;id&quot;:&quot;293098459e427d7d24b81724725c9927&quot;,&quot;node_id&quot;:&quot;MDQ6R2lzdDI5MzA5ODQ1OWU0MjdkN2QyNGI4MTcyNDcyNWM5OTI3&quot;,&quot;git_pull_url&quot;:&quot;https://gist.github.com/293098459e427d7d24b81724725c9927.git&quot;,&quot;git_push_url&quot;:&quot;https://gist.github.com/293098459e427d7d24b81724725c9927.git&quot;,&quot;html_url&quot;:&quot;https://gist.github.com/293098459e427d7d24b81724725c9927&quot;,&quot;files&quot;:{&quot;hello_world.py&quot;:{&quot;filename&quot;:&quot;hello_world.py&quot;,&quot;type&quot;:&quot;application/x-python&quot;,&quot;language&quot;:&quot;Python&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/293098459e427d7d24b81724725c9927/raw/99c1bf3a345505c2e6195198d5f8c36267de570b/hello_world.py&quot;,&quot;size&quot;:199},&quot;hello_world.rb&quot;:{&quot;filename&quot;:&quot;hello_world.rb&quot;,&quot;type&quot;:&quot;application/x-ruby&quot;,&quot;language&quot;:&quot;Ruby&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/293098459e427d7d24b81724725c9927/raw/ee8be6ed38a708a8a32437bd6e9ef17fc2ef06b0/hello_world.rb&quot;,&quot;size&quot;:167},&quot;hello_world_python.txt&quot;:{&quot;filename&quot;:&quot;hello_world_python.txt&quot;,&quot;type&quot;:&quot;text/plain&quot;,&quot;language&quot;:&quot;Text&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/293098459e427d7d24b81724725c9927/raw/076b4b78c10c9b7e1e0b73ffb99631bfc948de3b/hello_world_python.txt&quot;,&quot;size&quot;:48},&quot;hello_world_ruby.txt&quot;:{&quot;filename&quot;:&quot;hello_world_ruby.txt&quot;,&quot;type&quot;:&quot;text/plain&quot;,&quot;language&quot;:&quot;Text&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/293098459e427d7d24b81724725c9927/raw/9e4544db60e01a261aac098592b11333704e9082/hello_world_ruby.txt&quot;,&quot;size&quot;:46}},&quot;public&quot;:true,&quot;created_at&quot;:&quot;2019-08-09T22:01:01Z&quot;,&quot;updated_at&quot;:&quot;2019-08-09T22:01:02Z&quot;,&quot;description&quot;:&quot;Hello World Examples&quot;,&quot;comments&quot;:0,&quot;user&quot;:null,&quot;comments_url&quot;:&quot;https://api.github.com/gists/293098459e427d7d24b81724725c9927/comments&quot;,&quot;owner&quot;:{&quot;login&quot;:&quot;Tharanibalaje&quot;,&quot;id&quot;:53902380,&quot;node_id&quot;:&quot;MDQ6VXNlcjUzOTAyMzgw&quot;,&quot;avatar_url&quot;:&quot;https://avatars2.githubusercontent.com/u/53902380?v=4&quot;,&quot;gravatar_id&quot;:&quot;&quot;,&quot;url&quot;:&quot;https://api.github.com/users/Tharanibalaje&quot;,&quot;html_url&quot;:&quot;https://github.com/Tharanibalaje&quot;,&quot;followers_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/followers&quot;,&quot;following_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/following{/other_user}&quot;,&quot;gists_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/gists{/gist_id}&quot;,&quot;starred_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/starred{/owner}{/repo}&quot;,&quot;subscriptions_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/subscriptions&quot;,&quot;organizations_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/orgs&quot;,&quot;repos_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/repos&quot;,&quot;events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/events{/privacy}&quot;,&quot;received_events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/received_events&quot;,&quot;type&quot;:&quot;User&quot;,&quot;site_admin&quot;:false},&quot;truncated&quot;:false},{&quot;url&quot;:&quot;https://api.github.com/gists/48413aa1eb98a28f46271efe8549b8d6&quot;,&quot;forks_url&quot;:&quot;https://api.github.com/gists/48413aa1eb98a28f46271efe8549b8d6/forks&quot;,&quot;commits_url&quot;:&quot;https://api.github.com/gists/48413aa1eb98a28f46271efe8549b8d6/commits&quot;,&quot;id&quot;:&quot;48413aa1eb98a28f46271efe8549b8d6&quot;,&quot;node_id&quot;:&quot;MDQ6R2lzdDQ4NDEzYWExZWI5OGEyOGY0NjI3MWVmZTg1NDliOGQ2&quot;,&quot;git_pull_url&quot;:&quot;https://gist.github.com/48413aa1eb98a28f46271efe8549b8d6.git&quot;,&quot;git_push_url&quot;:&quot;https://gist.github.com/48413aa1eb98a28f46271efe8549b8d6.git&quot;,&quot;html_url&quot;:&quot;https://gist.github.com/48413aa1eb98a28f46271efe8549b8d6&quot;,&quot;files&quot;:{&quot;hello_world.py&quot;:{&quot;filename&quot;:&quot;hello_world.py&quot;,&quot;type&quot;:&quot;application/x-python&quot;,&quot;language&quot;:&quot;Python&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/48413aa1eb98a28f46271efe8549b8d6/raw/99c1bf3a345505c2e6195198d5f8c36267de570b/hello_world.py&quot;,&quot;size&quot;:199},&quot;hello_world.rb&quot;:{&quot;filename&quot;:&quot;hello_world.rb&quot;,&quot;type&quot;:&quot;application/x-ruby&quot;,&quot;language&quot;:&quot;Ruby&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/48413aa1eb98a28f46271efe8549b8d6/raw/ee8be6ed38a708a8a32437bd6e9ef17fc2ef06b0/hello_world.rb&quot;,&quot;size&quot;:167},&quot;hello_world_python.txt&quot;:{&quot;filename&quot;:&quot;hello_world_python.txt&quot;,&quot;type&quot;:&quot;text/plain&quot;,&quot;language&quot;:&quot;Text&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/48413aa1eb98a28f46271efe8549b8d6/raw/076b4b78c10c9b7e1e0b73ffb99631bfc948de3b/hello_world_python.txt&quot;,&quot;size&quot;:48},&quot;hello_world_ruby.txt&quot;:{&quot;filename&quot;:&quot;hello_world_ruby.txt&quot;,&quot;type&quot;:&quot;text/plain&quot;,&quot;language&quot;:&quot;Text&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/48413aa1eb98a28f46271efe8549b8d6/raw/9e4544db60e01a261aac098592b11333704e9082/hello_world_ruby.txt&quot;,&quot;size&quot;:46}},&quot;public&quot;:true,&quot;created_at&quot;:&quot;2019-08-09T21:51:39Z&quot;,&quot;updated_at&quot;:&quot;2019-08-09T21:51:39Z&quot;,&quot;description&quot;:&quot;Hello World Examples&quot;,&quot;comments&quot;:0,&quot;user&quot;:null,&quot;comments_url&quot;:&quot;https://api.github.com/gists/48413aa1eb98a28f46271efe8549b8d6/comments&quot;,&quot;owner&quot;:{&quot;login&quot;:&quot;Tharanibalaje&quot;,&quot;id&quot;:53902380,&quot;node_id&quot;:&quot;MDQ6VXNlcjUzOTAyMzgw&quot;,&quot;avatar_url&quot;:&quot;https://avatars2.githubusercontent.com/u/53902380?v=4&quot;,&quot;gravatar_id&quot;:&quot;&quot;,&quot;url&quot;:&quot;https://api.github.com/users/Tharanibalaje&quot;,&quot;html_url&quot;:&quot;https://github.com/Tharanibalaje&quot;,&quot;followers_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/followers&quot;,&quot;following_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/following{/other_user}&quot;,&quot;gists_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/gists{/gist_id}&quot;,&quot;starred_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/starred{/owner}{/repo}&quot;,&quot;subscriptions_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/subscriptions&quot;,&quot;organizations_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/orgs&quot;,&quot;repos_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/repos&quot;,&quot;events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/events{/privacy}&quot;,&quot;received_events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/received_events&quot;,&quot;type&quot;:&quot;User&quot;,&quot;site_admin&quot;:false},&quot;truncated&quot;:false},{&quot;url&quot;:&quot;https://api.github.com/gists/cda30cd9b31985e575ffcc28ac4fcbb9&quot;,&quot;forks_url&quot;:&quot;https://api.github.com/gists/cda30cd9b31985e575ffcc28ac4fcbb9/forks&quot;,&quot;commits_url&quot;:&quot;https://api.github.com/gists/cda30cd9b31985e575ffcc28ac4fcbb9/commits&quot;,&quot;id&quot;:&quot;cda30cd9b31985e575ffcc28ac4fcbb9&quot;,&quot;node_id&quot;:&quot;MDQ6R2lzdGNkYTMwY2Q5YjMxOTg1ZTU3NWZmY2MyOGFjNGZjYmI5&quot;,&quot;git_pull_url&quot;:&quot;https://gist.github.com/cda30cd9b31985e575ffcc28ac4fcbb9.git&quot;,&quot;git_push_url&quot;:&quot;https://gist.github.com/cda30cd9b31985e575ffcc28ac4fcbb9.git&quot;,&quot;html_url&quot;:&quot;https://gist.github.com/cda30cd9b31985e575ffcc28ac4fcbb9&quot;,&quot;files&quot;:{&quot;hello_world.py&quot;:{&quot;filename&quot;:&quot;hello_world.py&quot;,&quot;type&quot;:&quot;application/x-python&quot;,&quot;language&quot;:&quot;Python&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/cda30cd9b31985e575ffcc28ac4fcbb9/raw/99c1bf3a345505c2e6195198d5f8c36267de570b/hello_world.py&quot;,&quot;size&quot;:199},&quot;hello_world.rb&quot;:{&quot;filename&quot;:&quot;hello_world.rb&quot;,&quot;type&quot;:&quot;application/x-ruby&quot;,&quot;language&quot;:&quot;Ruby&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/cda30cd9b31985e575ffcc28ac4fcbb9/raw/ee8be6ed38a708a8a32437bd6e9ef17fc2ef06b0/hello_world.rb&quot;,&quot;size&quot;:167},&quot;hello_world_python.txt&quot;:{&quot;filename&quot;:&quot;hello_world_python.txt&quot;,&quot;type&quot;:&quot;text/plain&quot;,&quot;language&quot;:&quot;Text&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/cda30cd9b31985e575ffcc28ac4fcbb9/raw/076b4b78c10c9b7e1e0b73ffb99631bfc948de3b/hello_world_python.txt&quot;,&quot;size&quot;:48},&quot;hello_world_ruby.txt&quot;:{&quot;filename&quot;:&quot;hello_world_ruby.txt&quot;,&quot;type&quot;:&quot;text/plain&quot;,&quot;language&quot;:&quot;Text&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/cda30cd9b31985e575ffcc28ac4fcbb9/raw/9e4544db60e01a261aac098592b11333704e9082/hello_world_ruby.txt&quot;,&quot;size&quot;:46}},&quot;public&quot;:true,&quot;created_at&quot;:&quot;2019-08-09T21:48:17Z&quot;,&quot;updated_at&quot;:&quot;2019-08-09T21:48:17Z&quot;,&quot;description&quot;:&quot;Hello World Examples&quot;,&quot;comments&quot;:0,&quot;user&quot;:null,&quot;comments_url&quot;:&quot;https://api.github.com/gists/cda30cd9b31985e575ffcc28ac4fcbb9/comments&quot;,&quot;owner&quot;:{&quot;login&quot;:&quot;Tharanibalaje&quot;,&quot;id&quot;:53902380,&quot;node_id&quot;:&quot;MDQ6VXNlcjUzOTAyMzgw&quot;,&quot;avatar_url&quot;:&quot;https://avatars2.githubusercontent.com/u/53902380?v=4&quot;,&quot;gravatar_id&quot;:&quot;&quot;,&quot;url&quot;:&quot;https://api.github.com/users/Tharanibalaje&quot;,&quot;html_url&quot;:&quot;https://github.com/Tharanibalaje&quot;,&quot;followers_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/followers&quot;,&quot;following_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/following{/other_user}&quot;,&quot;gists_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/gists{/gist_id}&quot;,&quot;starred_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/starred{/owner}{/repo}&quot;,&quot;subscriptions_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/subscriptions&quot;,&quot;organizations_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/orgs&quot;,&quot;repos_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/repos&quot;,&quot;events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/events{/privacy}&quot;,&quot;received_events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/received_events&quot;,&quot;type&quot;:&quot;User&quot;,&quot;site_admin&quot;:false},&quot;truncated&quot;:false},{&quot;url&quot;:&quot;https://api.github.com/gists/dccb29cf30c573024e5133b68f0011bf&quot;,&quot;forks_url&quot;:&quot;https://api.github.com/gists/dccb29cf30c573024e5133b68f0011bf/forks&quot;,&quot;commits_url&quot;:&quot;https://api.github.com/gists/dccb29cf30c573024e5133b68f0011bf/commits&quot;,&quot;id&quot;:&quot;dccb29cf30c573024e5133b68f0011bf&quot;,&quot;node_id&quot;:&quot;MDQ6R2lzdGRjY2IyOWNmMzBjNTczMDI0ZTUxMzNiNjhmMDAxMWJm&quot;,&quot;git_pull_url&quot;:&quot;https://gist.github.com/dccb29cf30c573024e5133b68f0011bf.git&quot;,&quot;git_push_url&quot;:&quot;https://gist.github.com/dccb29cf30c573024e5133b68f0011bf.git&quot;,&quot;html_url&quot;:&quot;https://gist.github.com/dccb29cf30c573024e5133b68f0011bf&quot;,&quot;files&quot;:{&quot;hello_world.py&quot;:{&quot;filename&quot;:&quot;hello_world.py&quot;,&quot;type&quot;:&quot;application/x-python&quot;,&quot;language&quot;:&quot;Python&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/dccb29cf30c573024e5133b68f0011bf/raw/99c1bf3a345505c2e6195198d5f8c36267de570b/hello_world.py&quot;,&quot;size&quot;:199},&quot;hello_world.rb&quot;:{&quot;filename&quot;:&quot;hello_world.rb&quot;,&quot;type&quot;:&quot;application/x-ruby&quot;,&quot;language&quot;:&quot;Ruby&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/dccb29cf30c573024e5133b68f0011bf/raw/ee8be6ed38a708a8a32437bd6e9ef17fc2ef06b0/hello_world.rb&quot;,&quot;size&quot;:167},&quot;hello_world_python.txt&quot;:{&quot;filename&quot;:&quot;hello_world_python.txt&quot;,&quot;type&quot;:&quot;text/plain&quot;,&quot;language&quot;:&quot;Text&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/dccb29cf30c573024e5133b68f0011bf/raw/076b4b78c10c9b7e1e0b73ffb99631bfc948de3b/hello_world_python.txt&quot;,&quot;size&quot;:48},&quot;hello_world_ruby.txt&quot;:{&quot;filename&quot;:&quot;hello_world_ruby.txt&quot;,&quot;type&quot;:&quot;text/plain&quot;,&quot;language&quot;:&quot;Text&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/dccb29cf30c573024e5133b68f0011bf/raw/9e4544db60e01a261aac098592b11333704e9082/hello_world_ruby.txt&quot;,&quot;size&quot;:46}},&quot;public&quot;:true,&quot;created_at&quot;:&quot;2019-08-09T21:43:37Z&quot;,&quot;updated_at&quot;:&quot;2019-08-09T21:43:37Z&quot;,&quot;description&quot;:&quot;Hello World Examples&quot;,&quot;comments&quot;:0,&quot;user&quot;:null,&quot;comments_url&quot;:&quot;https://api.github.com/gists/dccb29cf30c573024e5133b68f0011bf/comments&quot;,&quot;owner&quot;:{&quot;login&quot;:&quot;Tharanibalaje&quot;,&quot;id&quot;:53902380,&quot;node_id&quot;:&quot;MDQ6VXNlcjUzOTAyMzgw&quot;,&quot;avatar_url&quot;:&quot;https://avatars2.githubusercontent.com/u/53902380?v=4&quot;,&quot;gravatar_id&quot;:&quot;&quot;,&quot;url&quot;:&quot;https://api.github.com/users/Tharanibalaje&quot;,&quot;html_url&quot;:&quot;https://github.com/Tharanibalaje&quot;,&quot;followers_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/followers&quot;,&quot;following_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/following{/other_user}&quot;,&quot;gists_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/gists{/gist_id}&quot;,&quot;starred_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/starred{/owner}{/repo}&quot;,&quot;subscriptions_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/subscriptions&quot;,&quot;organizations_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/orgs&quot;,&quot;repos_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/repos&quot;,&quot;events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/events{/privacy}&quot;,&quot;received_events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/received_events&quot;,&quot;type&quot;:&quot;User&quot;,&quot;site_admin&quot;:false},&quot;truncated&quot;:false}]</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_src-test-resources-test-feature.html">src/test/resources/test.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.423</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To verify a Create operation without authorization</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/gists'</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request read('classpath:postResponse.json')</span>
+  
+  <span class="lead-duration duration">0.004</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+  
+  <span class="lead-duration duration">1.416</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>17:21:04.218 request:
+1 &gt; POST https://api.github.com/gists
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 694
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: api.github.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+{&quot;description&quot;:&quot;Hello World Examples&quot;,&quot;public&quot;:false,&quot;files&quot;:{&quot;hello_world.rb&quot;:{&quot;content&quot;:&quot;class HelloWorld\n   def initialize(name)\n      @name = name.capitalize\n   end\n   def sayHi\n      puts \&quot;Hello !\&quot;\n   end\nend\n\nhello = HelloWorld.new(\&quot;World\&quot;)\nhello.sayHi&quot;},&quot;hello_world.py&quot;:{&quot;content&quot;:&quot;class HelloWorld:\n\n    def __init__(self, name):\n        self.name = name.capitalize()\n       \n    def sayHi(self):\n        print \&quot;Hello \&quot; + self.name + \&quot;!\&quot;\n\nhello = HelloWorld(\&quot;world\&quot;)\nhello.sayHi()&quot;},&quot;hello_world_ruby.txt&quot;:{&quot;content&quot;:&quot;Run `ruby hello_world.rb` to print Hello World&quot;},&quot;hello_world_python.txt&quot;:{&quot;content&quot;:&quot;Run `python hello_world.py` to print Hello World&quot;}}}
+
+17:21:04.824 response time in milliseconds: 603.79
+1 &lt; 401
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type
+1 &lt; Content-Length: 112
+1 &lt; Content-Security-Policy: default-src 'none'
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 14 Aug 2019 15:21:08 GMT
+1 &lt; Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+1 &lt; Server: GitHub.com
+1 &lt; Status: 401 Unauthorized
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: deny
+1 &lt; X-GitHub-Media-Type: github.v3; format=json
+1 &lt; X-GitHub-Request-Id: 4A6D:5E18:2C3BB:69D1D:5D5426E4
+1 &lt; X-RateLimit-Limit: 60
+1 &lt; X-RateLimit-Remaining: 42
+1 &lt; X-RateLimit-Reset: 1565799668
+1 &lt; X-XSS-Protection: 1; mode=block
+{&quot;message&quot;:&quot;Requires authentication&quot;,&quot;documentation_url&quot;:&quot;https://developer.github.com/v3/gists/#create-a-gist&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 401</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_src-test-resources-test-feature.html">src/test/resources/test.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.423</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To verify an Update operation without authorization</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/gists/b3124c4f7c714fd89f8d621ddc11dd2c'</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request read('classpath:putResponse.json')</span>
+  
+  <span class="lead-duration duration">0.005</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method PATCH</span>
+  
+  <span class="lead-duration duration">1.415</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>17:21:04.218 request:
+1 &gt; PATCH https://api.github.com/gists/b3124c4f7c714fd89f8d621ddc11dd2c
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 278
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: api.github.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+{&quot;description&quot;:&quot;Hello World Examples&quot;,&quot;files&quot;:{&quot;hello_world_ruby.txt&quot;:{&quot;content&quot;:&quot;Run `ruby hello_world.rb` or `python hello_world.py` to print Hello World&quot;,&quot;filename&quot;:&quot;hello_world.md&quot;},&quot;hello_world_python.txt&quot;:null,&quot;new_file.txt&quot;:{&quot;content&quot;:&quot;This is a new placeholder file.&quot;}}}
+
+17:21:04.825 response time in milliseconds: 604.77
+1 &lt; 404
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type
+1 &lt; Content-Security-Policy: default-src 'none'
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 14 Aug 2019 15:21:08 GMT
+1 &lt; Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+1 &lt; Server: GitHub.com
+1 &lt; Status: 404 Not Found
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: deny
+1 &lt; X-GitHub-Media-Type: github.v3; format=json
+1 &lt; X-GitHub-Request-Id: 4A71:22B5:6E8F6:D03F5:5D5426E4
+1 &lt; X-RateLimit-Limit: 60
+1 &lt; X-RateLimit-Remaining: 41
+1 &lt; X-RateLimit-Reset: 1565799668
+1 &lt; X-XSS-Protection: 1; mode=block
+{&quot;message&quot;:&quot;Not Found&quot;,&quot;documentation_url&quot;:&quot;https://developer.github.com/v3/gists/#edit-a-gist&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 404</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_src-test-resources-test-feature.html">src/test/resources/test.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.423</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To verify an Delete operation without authorization</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/gists/b3124c4f7c714fd89f8d621ddc11dd2c'</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method DELETE</span>
+  
+  <span class="lead-duration duration">1.420</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>17:21:04.217 request:
+1 &gt; DELETE https://api.github.com/gists/b3124c4f7c714fd89f8d621ddc11dd2c
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api.github.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+17:21:04.825 response time in milliseconds: 606.13
+1 &lt; 404
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type
+1 &lt; Content-Security-Policy: default-src 'none'
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 14 Aug 2019 15:21:08 GMT
+1 &lt; Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+1 &lt; Server: GitHub.com
+1 &lt; Status: 404 Not Found
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: deny
+1 &lt; X-GitHub-Media-Type: github.v3; format=json
+1 &lt; X-GitHub-Request-Id: 4A6F:5769:4AE88:9FCD2:5D5426E4
+1 &lt; X-RateLimit-Limit: 60
+1 &lt; X-RateLimit-Remaining: 40
+1 &lt; X-RateLimit-Reset: 1565799668
+1 &lt; X-XSS-Protection: 1; mode=block
+{&quot;message&quot;:&quot;Not Found&quot;,&quot;documentation_url&quot;:&quot;https://developer.github.com/v3/gists/#delete-a-gist&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 404</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_src-test-resources-test-feature.html">src/test/resources/test.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.423</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To verify an create operation without request body</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/gists'</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = authorization</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {}</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+  
+  <span class="lead-duration duration">1.420</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>17:21:04.218 request:
+1 &gt; POST https://api.github.com/gists
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Basic dGhhcmFuaWJhbGFqZTozOWI4MWVlYTNkNWJlMWYwOGViNjg4MzQ0MTI3YmMwYjE2NWQxMTgz
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 2
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: api.github.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+{}
+
+17:21:04.824 response time in milliseconds: 604.19
+1 &lt; 422
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type
+1 &lt; Content-Length: 135
+1 &lt; Content-Security-Policy: default-src 'none'
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 14 Aug 2019 15:21:08 GMT
+1 &lt; Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+1 &lt; Server: GitHub.com
+1 &lt; Status: 422 Unprocessable Entity
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+1 &lt; X-Accepted-OAuth-Scopes: 
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: deny
+1 &lt; X-GitHub-Media-Type: github.v3; format=json
+1 &lt; X-GitHub-Request-Id: 4A70:1631:6F965:CCA5D:5D5426E4
+1 &lt; X-OAuth-Scopes: gist
+1 &lt; X-RateLimit-Limit: 5000
+1 &lt; X-RateLimit-Remaining: 4999
+1 &lt; X-RateLimit-Reset: 1565799668
+1 &lt; X-XSS-Protection: 1; mode=block
+{&quot;message&quot;:&quot;Invalid request.\n\n\&quot;files\&quot; wasn't supplied.&quot;,&quot;documentation_url&quot;:&quot;https://developer.github.com/v3/gists/#create-a-gist&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 422</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_src-test-resources-test-feature.html">src/test/resources/test.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.707</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To verify an patch operation without body</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-16" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-17" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/gists/b3124c4f7c714fd89f8d621ddc11dd2c'</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = authorization</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {}</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method PATCH</span>
+  
+  <span class="lead-duration duration">0.704</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>17:21:04.840 request:
+1 &gt; PATCH https://api.github.com/gists/b3124c4f7c714fd89f8d621ddc11dd2c
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Basic dGhhcmFuaWJhbGFqZTozOWI4MWVlYTNkNWJlMWYwOGViNjg4MzQ0MTI3YmMwYjE2NWQxMTgz
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 2
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: api.github.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+{}
+
+17:21:05.543 response time in milliseconds: 701.85
+1 &lt; 422
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type
+1 &lt; Content-Length: 203
+1 &lt; Content-Security-Policy: default-src 'none'
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 14 Aug 2019 15:21:09 GMT
+1 &lt; Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+1 &lt; Server: GitHub.com
+1 &lt; Status: 422 Unprocessable Entity
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+1 &lt; X-Accepted-OAuth-Scopes: 
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: deny
+1 &lt; X-GitHub-Media-Type: github.v3; format=json
+1 &lt; X-GitHub-Request-Id: 55FC:2737:D63C:112F2:5D5426E4
+1 &lt; X-OAuth-Scopes: gist
+1 &lt; X-RateLimit-Limit: 5000
+1 &lt; X-RateLimit-Remaining: 4996
+1 &lt; X-RateLimit-Reset: 1565799668
+1 &lt; X-XSS-Protection: 1; mode=block
+{&quot;message&quot;:&quot;Invalid request.\n\nNo subschema in \&quot;anyOf\&quot; matched.\n\&quot;description\&quot; wasn't supplied.\n\&quot;files\&quot; wasn't supplied.&quot;,&quot;documentation_url&quot;:&quot;https://developer.github.com/v3/gists/#edit-a-gist&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 422</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_src-test-resources-test-feature.html">src/test/resources/test.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.708</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To verify get operation with authorization unknown gist</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-19" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-20" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/gists/b3124c4f7c714fd89f8d621ddc11dd2c45'</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = authorization</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">0.705</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details">
+        <pre>17:21:04.840 request:
+1 &gt; GET https://api.github.com/gists/b3124c4f7c714fd89f8d621ddc11dd2c45
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Basic dGhhcmFuaWJhbGFqZTozOWI4MWVlYTNkNWJlMWYwOGViNjg4MzQ0MTI3YmMwYjE2NWQxMTgz
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api.github.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+17:21:05.543 response time in milliseconds: 702.42
+1 &lt; 404
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type
+1 &lt; Content-Security-Policy: default-src 'none'
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 14 Aug 2019 15:21:09 GMT
+1 &lt; Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+1 &lt; Server: GitHub.com
+1 &lt; Status: 404 Not Found
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Accepted-OAuth-Scopes: repo
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: deny
+1 &lt; X-GitHub-Media-Type: github.v3; format=json
+1 &lt; X-GitHub-Request-Id: 55FB:30E3:1259D:185CA:5D5426E4
+1 &lt; X-OAuth-Scopes: gist
+1 &lt; X-RateLimit-Limit: 5000
+1 &lt; X-RateLimit-Remaining: 4997
+1 &lt; X-RateLimit-Reset: 1565799668
+1 &lt; X-XSS-Protection: 1; mode=block
+{&quot;message&quot;:&quot;Not Found&quot;,&quot;documentation_url&quot;:&quot;https://developer.github.com/v3/gists/#get-a-single-gist&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 404</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_src-test-resources-test-feature.html">src/test/resources/test.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">6.663</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-22">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To verify CRUD operations, a new gist is Created, Read, update and delete the gist</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-22" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-23">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-23" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/gists'</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = authorization</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request read('classpath:postResponse.json')</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+  
+  <span class="lead-duration duration">2.074</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>17:21:04.841 request:
+1 &gt; POST https://api.github.com/gists
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Basic dGhhcmFuaWJhbGFqZTozOWI4MWVlYTNkNWJlMWYwOGViNjg4MzQ0MTI3YmMwYjE2NWQxMTgz
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 694
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: api.github.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+{&quot;description&quot;:&quot;Hello World Examples&quot;,&quot;public&quot;:false,&quot;files&quot;:{&quot;hello_world.rb&quot;:{&quot;content&quot;:&quot;class HelloWorld\n   def initialize(name)\n      @name = name.capitalize\n   end\n   def sayHi\n      puts \&quot;Hello !\&quot;\n   end\nend\n\nhello = HelloWorld.new(\&quot;World\&quot;)\nhello.sayHi&quot;},&quot;hello_world.py&quot;:{&quot;content&quot;:&quot;class HelloWorld:\n\n    def __init__(self, name):\n        self.name = name.capitalize()\n       \n    def sayHi(self):\n        print \&quot;Hello \&quot; + self.name + \&quot;!\&quot;\n\nhello = HelloWorld(\&quot;world\&quot;)\nhello.sayHi()&quot;},&quot;hello_world_ruby.txt&quot;:{&quot;content&quot;:&quot;Run `ruby hello_world.rb` to print Hello World&quot;},&quot;hello_world_python.txt&quot;:{&quot;content&quot;:&quot;Run `python hello_world.py` to print Hello World&quot;}}}
+
+17:21:06.914 response time in milliseconds: 2067.12
+1 &lt; 201
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type
+1 &lt; Cache-Control: private, max-age=60, s-maxage=60
+1 &lt; Content-Length: 4746
+1 &lt; Content-Security-Policy: default-src 'none'
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 14 Aug 2019 15:21:10 GMT
+1 &lt; ETag: &quot;64d7d66a2fa00dde645ff773db8f5260&quot;
+1 &lt; Location: https://api.github.com/gists/17a955ee057221ccad55ac8aae3b9d9a
+1 &lt; Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+1 &lt; Server: GitHub.com
+1 &lt; Status: 201 Created
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+1 &lt; Vary: [Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding]
+1 &lt; X-Accepted-OAuth-Scopes: 
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: deny
+1 &lt; X-GitHub-Media-Type: github.v3; format=json
+1 &lt; X-GitHub-Request-Id: 55FD:7FC0:A72C:E67C:5D5426E4
+1 &lt; X-OAuth-Scopes: gist
+1 &lt; X-RateLimit-Limit: 5000
+1 &lt; X-RateLimit-Remaining: 4995
+1 &lt; X-RateLimit-Reset: 1565799668
+1 &lt; X-XSS-Protection: 1; mode=block
+{&quot;url&quot;:&quot;https://api.github.com/gists/17a955ee057221ccad55ac8aae3b9d9a&quot;,&quot;forks_url&quot;:&quot;https://api.github.com/gists/17a955ee057221ccad55ac8aae3b9d9a/forks&quot;,&quot;commits_url&quot;:&quot;https://api.github.com/gists/17a955ee057221ccad55ac8aae3b9d9a/commits&quot;,&quot;id&quot;:&quot;17a955ee057221ccad55ac8aae3b9d9a&quot;,&quot;node_id&quot;:&quot;MDQ6R2lzdDE3YTk1NWVlMDU3MjIxY2NhZDU1YWM4YWFlM2I5ZDlh&quot;,&quot;git_pull_url&quot;:&quot;https://gist.github.com/17a955ee057221ccad55ac8aae3b9d9a.git&quot;,&quot;git_push_url&quot;:&quot;https://gist.github.com/17a955ee057221ccad55ac8aae3b9d9a.git&quot;,&quot;html_url&quot;:&quot;https://gist.github.com/17a955ee057221ccad55ac8aae3b9d9a&quot;,&quot;files&quot;:{&quot;hello_world.py&quot;:{&quot;filename&quot;:&quot;hello_world.py&quot;,&quot;type&quot;:&quot;application/x-python&quot;,&quot;language&quot;:&quot;Python&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/17a955ee057221ccad55ac8aae3b9d9a/raw/99c1bf3a345505c2e6195198d5f8c36267de570b/hello_world.py&quot;,&quot;size&quot;:199,&quot;truncated&quot;:false,&quot;content&quot;:&quot;class HelloWorld:\n\n    def __init__(self, name):\n        self.name = name.capitalize()\n       \n    def sayHi(self):\n        print \&quot;Hello \&quot; + self.name + \&quot;!\&quot;\n\nhello = HelloWorld(\&quot;world\&quot;)\nhello.sayHi()&quot;},&quot;hello_world.rb&quot;:{&quot;filename&quot;:&quot;hello_world.rb&quot;,&quot;type&quot;:&quot;application/x-ruby&quot;,&quot;language&quot;:&quot;Ruby&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/17a955ee057221ccad55ac8aae3b9d9a/raw/ee8be6ed38a708a8a32437bd6e9ef17fc2ef06b0/hello_world.rb&quot;,&quot;size&quot;:167,&quot;truncated&quot;:false,&quot;content&quot;:&quot;class HelloWorld\n   def initialize(name)\n      @name = name.capitalize\n   end\n   def sayHi\n      puts \&quot;Hello !\&quot;\n   end\nend\n\nhello = HelloWorld.new(\&quot;World\&quot;)\nhello.sayHi&quot;},&quot;hello_world_python.txt&quot;:{&quot;filename&quot;:&quot;hello_world_python.txt&quot;,&quot;type&quot;:&quot;text/plain&quot;,&quot;language&quot;:&quot;Text&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/17a955ee057221ccad55ac8aae3b9d9a/raw/076b4b78c10c9b7e1e0b73ffb99631bfc948de3b/hello_world_python.txt&quot;,&quot;size&quot;:48,&quot;truncated&quot;:false,&quot;content&quot;:&quot;Run `python hello_world.py` to print Hello World&quot;},&quot;hello_world_ruby.txt&quot;:{&quot;filename&quot;:&quot;hello_world_ruby.txt&quot;,&quot;type&quot;:&quot;text/plain&quot;,&quot;language&quot;:&quot;Text&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/17a955ee057221ccad55ac8aae3b9d9a/raw/9e4544db60e01a261aac098592b11333704e9082/hello_world_ruby.txt&quot;,&quot;size&quot;:46,&quot;truncated&quot;:false,&quot;content&quot;:&quot;Run `ruby hello_world.rb` to print Hello World&quot;}},&quot;public&quot;:false,&quot;created_at&quot;:&quot;2019-08-14T15:21:10Z&quot;,&quot;updated_at&quot;:&quot;2019-08-14T15:21:10Z&quot;,&quot;description&quot;:&quot;Hello World Examples&quot;,&quot;comments&quot;:0,&quot;user&quot;:null,&quot;comments_url&quot;:&quot;https://api.github.com/gists/17a955ee057221ccad55ac8aae3b9d9a/comments&quot;,&quot;owner&quot;:{&quot;login&quot;:&quot;Tharanibalaje&quot;,&quot;id&quot;:53902380,&quot;node_id&quot;:&quot;MDQ6VXNlcjUzOTAyMzgw&quot;,&quot;avatar_url&quot;:&quot;https://avatars2.githubusercontent.com/u/53902380?v=4&quot;,&quot;gravatar_id&quot;:&quot;&quot;,&quot;url&quot;:&quot;https://api.github.com/users/Tharanibalaje&quot;,&quot;html_url&quot;:&quot;https://github.com/Tharanibalaje&quot;,&quot;followers_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/followers&quot;,&quot;following_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/following{/other_user}&quot;,&quot;gists_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/gists{/gist_id}&quot;,&quot;starred_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/starred{/owner}{/repo}&quot;,&quot;subscriptions_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/subscriptions&quot;,&quot;organizations_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/orgs&quot;,&quot;repos_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/repos&quot;,&quot;events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/events{/privacy}&quot;,&quot;received_events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/received_events&quot;,&quot;type&quot;:&quot;User&quot;,&quot;site_admin&quot;:false},&quot;forks&quot;:[],&quot;history&quot;:[{&quot;user&quot;:{&quot;login&quot;:&quot;Tharanibalaje&quot;,&quot;id&quot;:53902380,&quot;node_id&quot;:&quot;MDQ6VXNlcjUzOTAyMzgw&quot;,&quot;avatar_url&quot;:&quot;https://avatars2.githubusercontent.com/u/53902380?v=4&quot;,&quot;gravatar_id&quot;:&quot;&quot;,&quot;url&quot;:&quot;https://api.github.com/users/Tharanibalaje&quot;,&quot;html_url&quot;:&quot;https://github.com/Tharanibalaje&quot;,&quot;followers_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/followers&quot;,&quot;following_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/following{/other_user}&quot;,&quot;gists_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/gists{/gist_id}&quot;,&quot;starred_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/starred{/owner}{/repo}&quot;,&quot;subscriptions_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/subscriptions&quot;,&quot;organizations_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/orgs&quot;,&quot;repos_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/repos&quot;,&quot;events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/events{/privacy}&quot;,&quot;received_events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/received_events&quot;,&quot;type&quot;:&quot;User&quot;,&quot;site_admin&quot;:false},&quot;version&quot;:&quot;03fcfed1fc6de530f8cfde20a1f59b97f1fdd6ef&quot;,&quot;committed_at&quot;:&quot;2019-08-14T15:21:09Z&quot;,&quot;change_status&quot;:{&quot;total&quot;:23,&quot;additions&quot;:23,&quot;deletions&quot;:0},&quot;url&quot;:&quot;https://api.github.com/gists/17a955ee057221ccad55ac8aae3b9d9a/03fcfed1fc6de530f8cfde20a1f59b97f1fdd6ef&quot;}],&quot;truncated&quot;:false}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 201</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def gistId = $.id</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print gistId</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>17:21:06.915 [print] 17a955ee057221ccad55ac8aae3b9d9a</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def gistResponse = $</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/gists/'+gistId</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">0.961</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-26" class="collapse collapsable-details">
+        <pre>17:21:06.919 request:
+2 &gt; GET https://api.github.com/gists/17a955ee057221ccad55ac8aae3b9d9a
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Host: api.github.com
+2 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+17:21:07.877 response time in milliseconds: 952.72
+2 &lt; 200
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type
+2 &lt; Cache-Control: public, max-age=60, s-maxage=60
+2 &lt; Content-Security-Policy: default-src 'none'
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Date: Wed, 14 Aug 2019 15:21:11 GMT
+2 &lt; ETag: W/&quot;736da802f429de14777d190d61f6ea0f&quot;
+2 &lt; Last-Modified: Wed, 14 Aug 2019 15:21:10 GMT
+2 &lt; Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+2 &lt; Server: GitHub.com
+2 &lt; Status: 200 OK
+2 &lt; Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Vary: [Accept, Accept-Encoding]
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-Frame-Options: deny
+2 &lt; X-GitHub-Media-Type: github.v3; format=json
+2 &lt; X-GitHub-Request-Id: 55F6:4405:1A671:23BB6:5D5426E6
+2 &lt; X-RateLimit-Limit: 60
+2 &lt; X-RateLimit-Remaining: 39
+2 &lt; X-RateLimit-Reset: 1565799668
+2 &lt; X-XSS-Protection: 1; mode=block
+{&quot;url&quot;:&quot;https://api.github.com/gists/17a955ee057221ccad55ac8aae3b9d9a&quot;,&quot;forks_url&quot;:&quot;https://api.github.com/gists/17a955ee057221ccad55ac8aae3b9d9a/forks&quot;,&quot;commits_url&quot;:&quot;https://api.github.com/gists/17a955ee057221ccad55ac8aae3b9d9a/commits&quot;,&quot;id&quot;:&quot;17a955ee057221ccad55ac8aae3b9d9a&quot;,&quot;node_id&quot;:&quot;MDQ6R2lzdDE3YTk1NWVlMDU3MjIxY2NhZDU1YWM4YWFlM2I5ZDlh&quot;,&quot;git_pull_url&quot;:&quot;https://gist.github.com/17a955ee057221ccad55ac8aae3b9d9a.git&quot;,&quot;git_push_url&quot;:&quot;https://gist.github.com/17a955ee057221ccad55ac8aae3b9d9a.git&quot;,&quot;html_url&quot;:&quot;https://gist.github.com/17a955ee057221ccad55ac8aae3b9d9a&quot;,&quot;files&quot;:{&quot;hello_world.py&quot;:{&quot;filename&quot;:&quot;hello_world.py&quot;,&quot;type&quot;:&quot;application/x-python&quot;,&quot;language&quot;:&quot;Python&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/17a955ee057221ccad55ac8aae3b9d9a/raw/99c1bf3a345505c2e6195198d5f8c36267de570b/hello_world.py&quot;,&quot;size&quot;:199,&quot;truncated&quot;:false,&quot;content&quot;:&quot;class HelloWorld:\n\n    def __init__(self, name):\n        self.name = name.capitalize()\n       \n    def sayHi(self):\n        print \&quot;Hello \&quot; + self.name + \&quot;!\&quot;\n\nhello = HelloWorld(\&quot;world\&quot;)\nhello.sayHi()&quot;},&quot;hello_world.rb&quot;:{&quot;filename&quot;:&quot;hello_world.rb&quot;,&quot;type&quot;:&quot;application/x-ruby&quot;,&quot;language&quot;:&quot;Ruby&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/17a955ee057221ccad55ac8aae3b9d9a/raw/ee8be6ed38a708a8a32437bd6e9ef17fc2ef06b0/hello_world.rb&quot;,&quot;size&quot;:167,&quot;truncated&quot;:false,&quot;content&quot;:&quot;class HelloWorld\n   def initialize(name)\n      @name = name.capitalize\n   end\n   def sayHi\n      puts \&quot;Hello !\&quot;\n   end\nend\n\nhello = HelloWorld.new(\&quot;World\&quot;)\nhello.sayHi&quot;},&quot;hello_world_python.txt&quot;:{&quot;filename&quot;:&quot;hello_world_python.txt&quot;,&quot;type&quot;:&quot;text/plain&quot;,&quot;language&quot;:&quot;Text&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/17a955ee057221ccad55ac8aae3b9d9a/raw/076b4b78c10c9b7e1e0b73ffb99631bfc948de3b/hello_world_python.txt&quot;,&quot;size&quot;:48,&quot;truncated&quot;:false,&quot;content&quot;:&quot;Run `python hello_world.py` to print Hello World&quot;},&quot;hello_world_ruby.txt&quot;:{&quot;filename&quot;:&quot;hello_world_ruby.txt&quot;,&quot;type&quot;:&quot;text/plain&quot;,&quot;language&quot;:&quot;Text&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/17a955ee057221ccad55ac8aae3b9d9a/raw/9e4544db60e01a261aac098592b11333704e9082/hello_world_ruby.txt&quot;,&quot;size&quot;:46,&quot;truncated&quot;:false,&quot;content&quot;:&quot;Run `ruby hello_world.rb` to print Hello World&quot;}},&quot;public&quot;:false,&quot;created_at&quot;:&quot;2019-08-14T15:21:10Z&quot;,&quot;updated_at&quot;:&quot;2019-08-14T15:21:10Z&quot;,&quot;description&quot;:&quot;Hello World Examples&quot;,&quot;comments&quot;:0,&quot;user&quot;:null,&quot;comments_url&quot;:&quot;https://api.github.com/gists/17a955ee057221ccad55ac8aae3b9d9a/comments&quot;,&quot;owner&quot;:{&quot;login&quot;:&quot;Tharanibalaje&quot;,&quot;id&quot;:53902380,&quot;node_id&quot;:&quot;MDQ6VXNlcjUzOTAyMzgw&quot;,&quot;avatar_url&quot;:&quot;https://avatars2.githubusercontent.com/u/53902380?v=4&quot;,&quot;gravatar_id&quot;:&quot;&quot;,&quot;url&quot;:&quot;https://api.github.com/users/Tharanibalaje&quot;,&quot;html_url&quot;:&quot;https://github.com/Tharanibalaje&quot;,&quot;followers_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/followers&quot;,&quot;following_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/following{/other_user}&quot;,&quot;gists_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/gists{/gist_id}&quot;,&quot;starred_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/starred{/owner}{/repo}&quot;,&quot;subscriptions_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/subscriptions&quot;,&quot;organizations_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/orgs&quot;,&quot;repos_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/repos&quot;,&quot;events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/events{/privacy}&quot;,&quot;received_events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/received_events&quot;,&quot;type&quot;:&quot;User&quot;,&quot;site_admin&quot;:false},&quot;forks&quot;:[],&quot;history&quot;:[{&quot;user&quot;:{&quot;login&quot;:&quot;Tharanibalaje&quot;,&quot;id&quot;:53902380,&quot;node_id&quot;:&quot;MDQ6VXNlcjUzOTAyMzgw&quot;,&quot;avatar_url&quot;:&quot;https://avatars2.githubusercontent.com/u/53902380?v=4&quot;,&quot;gravatar_id&quot;:&quot;&quot;,&quot;url&quot;:&quot;https://api.github.com/users/Tharanibalaje&quot;,&quot;html_url&quot;:&quot;https://github.com/Tharanibalaje&quot;,&quot;followers_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/followers&quot;,&quot;following_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/following{/other_user}&quot;,&quot;gists_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/gists{/gist_id}&quot;,&quot;starred_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/starred{/owner}{/repo}&quot;,&quot;subscriptions_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/subscriptions&quot;,&quot;organizations_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/orgs&quot;,&quot;repos_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/repos&quot;,&quot;events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/events{/privacy}&quot;,&quot;received_events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/received_events&quot;,&quot;type&quot;:&quot;User&quot;,&quot;site_admin&quot;:false},&quot;version&quot;:&quot;03fcfed1fc6de530f8cfde20a1f59b97f1fdd6ef&quot;,&quot;committed_at&quot;:&quot;2019-08-14T15:21:09Z&quot;,&quot;change_status&quot;:{&quot;total&quot;:23,&quot;additions&quot;:23,&quot;deletions&quot;:0},&quot;url&quot;:&quot;https://api.github.com/gists/17a955ee057221ccad55ac8aae3b9d9a/03fcfed1fc6de530f8cfde20a1f59b97f1fdd6ef&quot;}],&quot;truncated&quot;:false}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = authorization</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match $.git_pull_url contains gistResponse.git_pull_url</span>
+  
+  <span class="lead-duration duration">0.024</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/gists/'+gistId</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = authorization</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request read('classpath:putResponse.json')</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method PATCH</span>
+  
+  <span class="lead-duration duration">1.410</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-27">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-27" class="collapse collapsable-details">
+        <pre>17:21:07.910 request:
+3 &gt; PATCH https://api.github.com/gists/17a955ee057221ccad55ac8aae3b9d9a
+3 &gt; Accept-Encoding: gzip,deflate
+3 &gt; Authorization: Basic dGhhcmFuaWJhbGFqZTozOWI4MWVlYTNkNWJlMWYwOGViNjg4MzQ0MTI3YmMwYjE2NWQxMTgz
+3 &gt; Connection: Keep-Alive
+3 &gt; Content-Length: 278
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Host: api.github.com
+3 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+{&quot;description&quot;:&quot;Hello World Examples&quot;,&quot;files&quot;:{&quot;hello_world_ruby.txt&quot;:{&quot;content&quot;:&quot;Run `ruby hello_world.rb` or `python hello_world.py` to print Hello World&quot;,&quot;filename&quot;:&quot;hello_world.md&quot;},&quot;hello_world_python.txt&quot;:null,&quot;new_file.txt&quot;:{&quot;content&quot;:&quot;This is a new placeholder file.&quot;}}}
+
+17:21:09.318 response time in milliseconds: 1405.70
+3 &lt; 200
+3 &lt; Access-Control-Allow-Origin: *
+3 &lt; Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type
+3 &lt; Cache-Control: private, max-age=60, s-maxage=60
+3 &lt; Content-Security-Policy: default-src 'none'
+3 &lt; Content-Type: application/json; charset=utf-8
+3 &lt; Date: Wed, 14 Aug 2019 15:21:13 GMT
+3 &lt; ETag: W/&quot;6f00e5d34d2fc2e41227ed57cb167cb1&quot;
+3 &lt; Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+3 &lt; Server: GitHub.com
+3 &lt; Status: 200 OK
+3 &lt; Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Vary: [Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding]
+3 &lt; X-Accepted-OAuth-Scopes: 
+3 &lt; X-Content-Type-Options: nosniff
+3 &lt; X-Frame-Options: deny
+3 &lt; X-GitHub-Media-Type: github.v3; format=json
+3 &lt; X-GitHub-Request-Id: 55F4:6CBB:12550:1837C:5D5426E7
+3 &lt; X-OAuth-Scopes: gist
+3 &lt; X-RateLimit-Limit: 5000
+3 &lt; X-RateLimit-Remaining: 4994
+3 &lt; X-RateLimit-Reset: 1565799668
+3 &lt; X-XSS-Protection: 1; mode=block
+{&quot;url&quot;:&quot;https://api.github.com/gists/17a955ee057221ccad55ac8aae3b9d9a&quot;,&quot;forks_url&quot;:&quot;https://api.github.com/gists/17a955ee057221ccad55ac8aae3b9d9a/forks&quot;,&quot;commits_url&quot;:&quot;https://api.github.com/gists/17a955ee057221ccad55ac8aae3b9d9a/commits&quot;,&quot;id&quot;:&quot;17a955ee057221ccad55ac8aae3b9d9a&quot;,&quot;node_id&quot;:&quot;MDQ6R2lzdDE3YTk1NWVlMDU3MjIxY2NhZDU1YWM4YWFlM2I5ZDlh&quot;,&quot;git_pull_url&quot;:&quot;https://gist.github.com/17a955ee057221ccad55ac8aae3b9d9a.git&quot;,&quot;git_push_url&quot;:&quot;https://gist.github.com/17a955ee057221ccad55ac8aae3b9d9a.git&quot;,&quot;html_url&quot;:&quot;https://gist.github.com/17a955ee057221ccad55ac8aae3b9d9a&quot;,&quot;files&quot;:{&quot;hello_world.md&quot;:{&quot;filename&quot;:&quot;hello_world.md&quot;,&quot;type&quot;:&quot;text/markdown&quot;,&quot;language&quot;:&quot;Markdown&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/17a955ee057221ccad55ac8aae3b9d9a/raw/4221bb4b942568c4e3ab253022d2b7fec7844f21/hello_world.md&quot;,&quot;size&quot;:73,&quot;truncated&quot;:false,&quot;content&quot;:&quot;Run `ruby hello_world.rb` or `python hello_world.py` to print Hello World&quot;},&quot;hello_world.py&quot;:{&quot;filename&quot;:&quot;hello_world.py&quot;,&quot;type&quot;:&quot;application/x-python&quot;,&quot;language&quot;:&quot;Python&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/17a955ee057221ccad55ac8aae3b9d9a/raw/99c1bf3a345505c2e6195198d5f8c36267de570b/hello_world.py&quot;,&quot;size&quot;:199,&quot;truncated&quot;:false,&quot;content&quot;:&quot;class HelloWorld:\n\n    def __init__(self, name):\n        self.name = name.capitalize()\n       \n    def sayHi(self):\n        print \&quot;Hello \&quot; + self.name + \&quot;!\&quot;\n\nhello = HelloWorld(\&quot;world\&quot;)\nhello.sayHi()&quot;},&quot;hello_world.rb&quot;:{&quot;filename&quot;:&quot;hello_world.rb&quot;,&quot;type&quot;:&quot;application/x-ruby&quot;,&quot;language&quot;:&quot;Ruby&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/17a955ee057221ccad55ac8aae3b9d9a/raw/ee8be6ed38a708a8a32437bd6e9ef17fc2ef06b0/hello_world.rb&quot;,&quot;size&quot;:167,&quot;truncated&quot;:false,&quot;content&quot;:&quot;class HelloWorld\n   def initialize(name)\n      @name = name.capitalize\n   end\n   def sayHi\n      puts \&quot;Hello !\&quot;\n   end\nend\n\nhello = HelloWorld.new(\&quot;World\&quot;)\nhello.sayHi&quot;},&quot;new_file.txt&quot;:{&quot;filename&quot;:&quot;new_file.txt&quot;,&quot;type&quot;:&quot;text/plain&quot;,&quot;language&quot;:&quot;Text&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/17a955ee057221ccad55ac8aae3b9d9a/raw/56ab7bdf864fa11c1e16acce2a5116171514d2d1/new_file.txt&quot;,&quot;size&quot;:31,&quot;truncated&quot;:false,&quot;content&quot;:&quot;This is a new placeholder file.&quot;}},&quot;public&quot;:false,&quot;created_at&quot;:&quot;2019-08-14T15:21:10Z&quot;,&quot;updated_at&quot;:&quot;2019-08-14T15:21:12Z&quot;,&quot;description&quot;:&quot;Hello World Examples&quot;,&quot;comments&quot;:0,&quot;user&quot;:null,&quot;comments_url&quot;:&quot;https://api.github.com/gists/17a955ee057221ccad55ac8aae3b9d9a/comments&quot;,&quot;owner&quot;:{&quot;login&quot;:&quot;Tharanibalaje&quot;,&quot;id&quot;:53902380,&quot;node_id&quot;:&quot;MDQ6VXNlcjUzOTAyMzgw&quot;,&quot;avatar_url&quot;:&quot;https://avatars2.githubusercontent.com/u/53902380?v=4&quot;,&quot;gravatar_id&quot;:&quot;&quot;,&quot;url&quot;:&quot;https://api.github.com/users/Tharanibalaje&quot;,&quot;html_url&quot;:&quot;https://github.com/Tharanibalaje&quot;,&quot;followers_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/followers&quot;,&quot;following_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/following{/other_user}&quot;,&quot;gists_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/gists{/gist_id}&quot;,&quot;starred_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/starred{/owner}{/repo}&quot;,&quot;subscriptions_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/subscriptions&quot;,&quot;organizations_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/orgs&quot;,&quot;repos_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/repos&quot;,&quot;events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/events{/privacy}&quot;,&quot;received_events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/received_events&quot;,&quot;type&quot;:&quot;User&quot;,&quot;site_admin&quot;:false},&quot;forks&quot;:[],&quot;history&quot;:[{&quot;user&quot;:{&quot;login&quot;:&quot;Tharanibalaje&quot;,&quot;id&quot;:53902380,&quot;node_id&quot;:&quot;MDQ6VXNlcjUzOTAyMzgw&quot;,&quot;avatar_url&quot;:&quot;https://avatars2.githubusercontent.com/u/53902380?v=4&quot;,&quot;gravatar_id&quot;:&quot;&quot;,&quot;url&quot;:&quot;https://api.github.com/users/Tharanibalaje&quot;,&quot;html_url&quot;:&quot;https://github.com/Tharanibalaje&quot;,&quot;followers_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/followers&quot;,&quot;following_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/following{/other_user}&quot;,&quot;gists_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/gists{/gist_id}&quot;,&quot;starred_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/starred{/owner}{/repo}&quot;,&quot;subscriptions_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/subscriptions&quot;,&quot;organizations_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/orgs&quot;,&quot;repos_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/repos&quot;,&quot;events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/events{/privacy}&quot;,&quot;received_events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/received_events&quot;,&quot;type&quot;:&quot;User&quot;,&quot;site_admin&quot;:false},&quot;version&quot;:&quot;90cde2a53bad2d3b4a09ad740885aadc0f4ba25c&quot;,&quot;committed_at&quot;:&quot;2019-08-14T15:21:12Z&quot;,&quot;change_status&quot;:{&quot;total&quot;:4,&quot;additions&quot;:2,&quot;deletions&quot;:2},&quot;url&quot;:&quot;https://api.github.com/gists/17a955ee057221ccad55ac8aae3b9d9a/90cde2a53bad2d3b4a09ad740885aadc0f4ba25c&quot;},{&quot;user&quot;:{&quot;login&quot;:&quot;Tharanibalaje&quot;,&quot;id&quot;:53902380,&quot;node_id&quot;:&quot;MDQ6VXNlcjUzOTAyMzgw&quot;,&quot;avatar_url&quot;:&quot;https://avatars2.githubusercontent.com/u/53902380?v=4&quot;,&quot;gravatar_id&quot;:&quot;&quot;,&quot;url&quot;:&quot;https://api.github.com/users/Tharanibalaje&quot;,&quot;html_url&quot;:&quot;https://github.com/Tharanibalaje&quot;,&quot;followers_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/followers&quot;,&quot;following_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/following{/other_user}&quot;,&quot;gists_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/gists{/gist_id}&quot;,&quot;starred_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/starred{/owner}{/repo}&quot;,&quot;subscriptions_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/subscriptions&quot;,&quot;organizations_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/orgs&quot;,&quot;repos_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/repos&quot;,&quot;events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/events{/privacy}&quot;,&quot;received_events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/received_events&quot;,&quot;type&quot;:&quot;User&quot;,&quot;site_admin&quot;:false},&quot;version&quot;:&quot;03fcfed1fc6de530f8cfde20a1f59b97f1fdd6ef&quot;,&quot;committed_at&quot;:&quot;2019-08-14T15:21:09Z&quot;,&quot;change_status&quot;:{&quot;total&quot;:23,&quot;additions&quot;:23,&quot;deletions&quot;:0},&quot;url&quot;:&quot;https://api.github.com/gists/17a955ee057221ccad55ac8aae3b9d9a/03fcfed1fc6de530f8cfde20a1f59b97f1fdd6ef&quot;}],&quot;truncated&quot;:false}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/gists/'+gistId</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = authorization</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">0.704</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details">
+        <pre>17:21:09.323 request:
+4 &gt; GET https://api.github.com/gists/17a955ee057221ccad55ac8aae3b9d9a
+4 &gt; Accept-Encoding: gzip,deflate
+4 &gt; Authorization: Basic dGhhcmFuaWJhbGFqZTozOWI4MWVlYTNkNWJlMWYwOGViNjg4MzQ0MTI3YmMwYjE2NWQxMTgz
+4 &gt; Connection: Keep-Alive
+4 &gt; Host: api.github.com
+4 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+17:21:10.024 response time in milliseconds: 699.45
+4 &lt; 200
+4 &lt; Access-Control-Allow-Origin: *
+4 &lt; Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type
+4 &lt; Cache-Control: private, max-age=60, s-maxage=60
+4 &lt; Content-Security-Policy: default-src 'none'
+4 &lt; Content-Type: application/json; charset=utf-8
+4 &lt; Date: Wed, 14 Aug 2019 15:21:13 GMT
+4 &lt; ETag: W/&quot;e0c5dca8e1c379a9d627a33e48dd9d0b&quot;
+4 &lt; Last-Modified: Wed, 14 Aug 2019 15:21:13 GMT
+4 &lt; Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+4 &lt; Server: GitHub.com
+4 &lt; Status: 200 OK
+4 &lt; Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+4 &lt; Transfer-Encoding: chunked
+4 &lt; Vary: [Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding]
+4 &lt; X-Accepted-OAuth-Scopes: 
+4 &lt; X-Content-Type-Options: nosniff
+4 &lt; X-Frame-Options: deny
+4 &lt; X-GitHub-Media-Type: github.v3; format=json
+4 &lt; X-GitHub-Request-Id: 563E:59E1:2887B:3700D:5D5426E9
+4 &lt; X-OAuth-Scopes: gist
+4 &lt; X-RateLimit-Limit: 5000
+4 &lt; X-RateLimit-Remaining: 4993
+4 &lt; X-RateLimit-Reset: 1565799668
+4 &lt; X-XSS-Protection: 1; mode=block
+{&quot;url&quot;:&quot;https://api.github.com/gists/17a955ee057221ccad55ac8aae3b9d9a&quot;,&quot;forks_url&quot;:&quot;https://api.github.com/gists/17a955ee057221ccad55ac8aae3b9d9a/forks&quot;,&quot;commits_url&quot;:&quot;https://api.github.com/gists/17a955ee057221ccad55ac8aae3b9d9a/commits&quot;,&quot;id&quot;:&quot;17a955ee057221ccad55ac8aae3b9d9a&quot;,&quot;node_id&quot;:&quot;MDQ6R2lzdDE3YTk1NWVlMDU3MjIxY2NhZDU1YWM4YWFlM2I5ZDlh&quot;,&quot;git_pull_url&quot;:&quot;https://gist.github.com/17a955ee057221ccad55ac8aae3b9d9a.git&quot;,&quot;git_push_url&quot;:&quot;https://gist.github.com/17a955ee057221ccad55ac8aae3b9d9a.git&quot;,&quot;html_url&quot;:&quot;https://gist.github.com/17a955ee057221ccad55ac8aae3b9d9a&quot;,&quot;files&quot;:{&quot;hello_world.md&quot;:{&quot;filename&quot;:&quot;hello_world.md&quot;,&quot;type&quot;:&quot;text/markdown&quot;,&quot;language&quot;:&quot;Markdown&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/17a955ee057221ccad55ac8aae3b9d9a/raw/4221bb4b942568c4e3ab253022d2b7fec7844f21/hello_world.md&quot;,&quot;size&quot;:73,&quot;truncated&quot;:false,&quot;content&quot;:&quot;Run `ruby hello_world.rb` or `python hello_world.py` to print Hello World&quot;},&quot;hello_world.py&quot;:{&quot;filename&quot;:&quot;hello_world.py&quot;,&quot;type&quot;:&quot;application/x-python&quot;,&quot;language&quot;:&quot;Python&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/17a955ee057221ccad55ac8aae3b9d9a/raw/99c1bf3a345505c2e6195198d5f8c36267de570b/hello_world.py&quot;,&quot;size&quot;:199,&quot;truncated&quot;:false,&quot;content&quot;:&quot;class HelloWorld:\n\n    def __init__(self, name):\n        self.name = name.capitalize()\n       \n    def sayHi(self):\n        print \&quot;Hello \&quot; + self.name + \&quot;!\&quot;\n\nhello = HelloWorld(\&quot;world\&quot;)\nhello.sayHi()&quot;},&quot;hello_world.rb&quot;:{&quot;filename&quot;:&quot;hello_world.rb&quot;,&quot;type&quot;:&quot;application/x-ruby&quot;,&quot;language&quot;:&quot;Ruby&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/17a955ee057221ccad55ac8aae3b9d9a/raw/ee8be6ed38a708a8a32437bd6e9ef17fc2ef06b0/hello_world.rb&quot;,&quot;size&quot;:167,&quot;truncated&quot;:false,&quot;content&quot;:&quot;class HelloWorld\n   def initialize(name)\n      @name = name.capitalize\n   end\n   def sayHi\n      puts \&quot;Hello !\&quot;\n   end\nend\n\nhello = HelloWorld.new(\&quot;World\&quot;)\nhello.sayHi&quot;},&quot;new_file.txt&quot;:{&quot;filename&quot;:&quot;new_file.txt&quot;,&quot;type&quot;:&quot;text/plain&quot;,&quot;language&quot;:&quot;Text&quot;,&quot;raw_url&quot;:&quot;https://gist.githubusercontent.com/Tharanibalaje/17a955ee057221ccad55ac8aae3b9d9a/raw/56ab7bdf864fa11c1e16acce2a5116171514d2d1/new_file.txt&quot;,&quot;size&quot;:31,&quot;truncated&quot;:false,&quot;content&quot;:&quot;This is a new placeholder file.&quot;}},&quot;public&quot;:false,&quot;created_at&quot;:&quot;2019-08-14T15:21:10Z&quot;,&quot;updated_at&quot;:&quot;2019-08-14T15:21:13Z&quot;,&quot;description&quot;:&quot;Hello World Examples&quot;,&quot;comments&quot;:0,&quot;user&quot;:null,&quot;comments_url&quot;:&quot;https://api.github.com/gists/17a955ee057221ccad55ac8aae3b9d9a/comments&quot;,&quot;owner&quot;:{&quot;login&quot;:&quot;Tharanibalaje&quot;,&quot;id&quot;:53902380,&quot;node_id&quot;:&quot;MDQ6VXNlcjUzOTAyMzgw&quot;,&quot;avatar_url&quot;:&quot;https://avatars2.githubusercontent.com/u/53902380?v=4&quot;,&quot;gravatar_id&quot;:&quot;&quot;,&quot;url&quot;:&quot;https://api.github.com/users/Tharanibalaje&quot;,&quot;html_url&quot;:&quot;https://github.com/Tharanibalaje&quot;,&quot;followers_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/followers&quot;,&quot;following_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/following{/other_user}&quot;,&quot;gists_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/gists{/gist_id}&quot;,&quot;starred_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/starred{/owner}{/repo}&quot;,&quot;subscriptions_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/subscriptions&quot;,&quot;organizations_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/orgs&quot;,&quot;repos_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/repos&quot;,&quot;events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/events{/privacy}&quot;,&quot;received_events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/received_events&quot;,&quot;type&quot;:&quot;User&quot;,&quot;site_admin&quot;:false},&quot;forks&quot;:[],&quot;history&quot;:[{&quot;user&quot;:{&quot;login&quot;:&quot;Tharanibalaje&quot;,&quot;id&quot;:53902380,&quot;node_id&quot;:&quot;MDQ6VXNlcjUzOTAyMzgw&quot;,&quot;avatar_url&quot;:&quot;https://avatars2.githubusercontent.com/u/53902380?v=4&quot;,&quot;gravatar_id&quot;:&quot;&quot;,&quot;url&quot;:&quot;https://api.github.com/users/Tharanibalaje&quot;,&quot;html_url&quot;:&quot;https://github.com/Tharanibalaje&quot;,&quot;followers_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/followers&quot;,&quot;following_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/following{/other_user}&quot;,&quot;gists_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/gists{/gist_id}&quot;,&quot;starred_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/starred{/owner}{/repo}&quot;,&quot;subscriptions_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/subscriptions&quot;,&quot;organizations_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/orgs&quot;,&quot;repos_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/repos&quot;,&quot;events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/events{/privacy}&quot;,&quot;received_events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/received_events&quot;,&quot;type&quot;:&quot;User&quot;,&quot;site_admin&quot;:false},&quot;version&quot;:&quot;90cde2a53bad2d3b4a09ad740885aadc0f4ba25c&quot;,&quot;committed_at&quot;:&quot;2019-08-14T15:21:12Z&quot;,&quot;change_status&quot;:{&quot;total&quot;:4,&quot;additions&quot;:2,&quot;deletions&quot;:2},&quot;url&quot;:&quot;https://api.github.com/gists/17a955ee057221ccad55ac8aae3b9d9a/90cde2a53bad2d3b4a09ad740885aadc0f4ba25c&quot;},{&quot;user&quot;:{&quot;login&quot;:&quot;Tharanibalaje&quot;,&quot;id&quot;:53902380,&quot;node_id&quot;:&quot;MDQ6VXNlcjUzOTAyMzgw&quot;,&quot;avatar_url&quot;:&quot;https://avatars2.githubusercontent.com/u/53902380?v=4&quot;,&quot;gravatar_id&quot;:&quot;&quot;,&quot;url&quot;:&quot;https://api.github.com/users/Tharanibalaje&quot;,&quot;html_url&quot;:&quot;https://github.com/Tharanibalaje&quot;,&quot;followers_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/followers&quot;,&quot;following_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/following{/other_user}&quot;,&quot;gists_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/gists{/gist_id}&quot;,&quot;starred_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/starred{/owner}{/repo}&quot;,&quot;subscriptions_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/subscriptions&quot;,&quot;organizations_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/orgs&quot;,&quot;repos_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/repos&quot;,&quot;events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/events{/privacy}&quot;,&quot;received_events_url&quot;:&quot;https://api.github.com/users/Tharanibalaje/received_events&quot;,&quot;type&quot;:&quot;User&quot;,&quot;site_admin&quot;:false},&quot;version&quot;:&quot;03fcfed1fc6de530f8cfde20a1f59b97f1fdd6ef&quot;,&quot;committed_at&quot;:&quot;2019-08-14T15:21:09Z&quot;,&quot;change_status&quot;:{&quot;total&quot;:23,&quot;additions&quot;:23,&quot;deletions&quot;:0},&quot;url&quot;:&quot;https://api.github.com/gists/17a955ee057221ccad55ac8aae3b9d9a/03fcfed1fc6de530f8cfde20a1f59b97f1fdd6ef&quot;}],&quot;truncated&quot;:false}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/gists/'+gistId</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = authorization</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method DELETE</span>
+  
+  <span class="lead-duration duration">0.850</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-29">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-29" class="collapse collapsable-details">
+        <pre>17:21:10.027 request:
+5 &gt; DELETE https://api.github.com/gists/17a955ee057221ccad55ac8aae3b9d9a
+5 &gt; Accept-Encoding: gzip,deflate
+5 &gt; Authorization: Basic dGhhcmFuaWJhbGFqZTozOWI4MWVlYTNkNWJlMWYwOGViNjg4MzQ0MTI3YmMwYjE2NWQxMTgz
+5 &gt; Connection: Keep-Alive
+5 &gt; Host: api.github.com
+5 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+17:21:10.875 response time in milliseconds: 848.13
+5 &lt; 204
+5 &lt; Access-Control-Allow-Origin: *
+5 &lt; Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type
+5 &lt; Content-Security-Policy: default-src 'none'
+5 &lt; Content-Type: application/octet-stream
+5 &lt; Date: Wed, 14 Aug 2019 15:21:14 GMT
+5 &lt; Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+5 &lt; Server: GitHub.com
+5 &lt; Status: 204 No Content
+5 &lt; Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+5 &lt; Vary: Accept-Encoding
+5 &lt; X-Accepted-OAuth-Scopes: 
+5 &lt; X-Content-Type-Options: nosniff
+5 &lt; X-Frame-Options: deny
+5 &lt; X-GitHub-Media-Type: github.v3; format=json
+5 &lt; X-GitHub-Request-Id: 563D:2CD2:19D43:2327D:5D5426EA
+5 &lt; X-OAuth-Scopes: gist
+5 &lt; X-RateLimit-Limit: 5000
+5 &lt; X-RateLimit-Remaining: 4992
+5 &lt; X-RateLimit-Reset: 1565799668
+5 &lt; X-XSS-Protection: 1; mode=block</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 204</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/gists/'+gistId</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = authorization</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">0.626</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-30" class="collapse collapsable-details">
+        <pre>17:21:10.877 request:
+6 &gt; GET https://api.github.com/gists/17a955ee057221ccad55ac8aae3b9d9a
+6 &gt; Accept-Encoding: gzip,deflate
+6 &gt; Authorization: Basic dGhhcmFuaWJhbGFqZTozOWI4MWVlYTNkNWJlMWYwOGViNjg4MzQ0MTI3YmMwYjE2NWQxMTgz
+6 &gt; Connection: Keep-Alive
+6 &gt; Host: api.github.com
+6 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+17:21:11.502 response time in milliseconds: 623.84
+6 &lt; 404
+6 &lt; Access-Control-Allow-Origin: *
+6 &lt; Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type
+6 &lt; Content-Security-Policy: default-src 'none'
+6 &lt; Content-Type: application/json; charset=utf-8
+6 &lt; Date: Wed, 14 Aug 2019 15:21:15 GMT
+6 &lt; Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+6 &lt; Server: GitHub.com
+6 &lt; Status: 404 Not Found
+6 &lt; Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+6 &lt; Transfer-Encoding: chunked
+6 &lt; X-Accepted-OAuth-Scopes: repo
+6 &lt; X-Content-Type-Options: nosniff
+6 &lt; X-Frame-Options: deny
+6 &lt; X-GitHub-Media-Type: github.v3; format=json
+6 &lt; X-GitHub-Request-Id: 563A:59DF:F8A6:155D2:5D5426EA
+6 &lt; X-OAuth-Scopes: gist
+6 &lt; X-RateLimit-Limit: 5000
+6 &lt; X-RateLimit-Remaining: 4991
+6 &lt; X-RateLimit-Reset: 1565799668
+6 &lt; X-XSS-Protection: 1; mode=block
+{&quot;message&quot;:&quot;Not Found&quot;,&quot;documentation_url&quot;:&quot;https://developer.github.com/v3/gists/#get-a-single-gist&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 404</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

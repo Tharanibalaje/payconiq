@@ -1,0 +1,36 @@
+17:21:04.840 request:
+1 > GET https://api.github.com/gists/b3124c4f7c714fd89f8d621ddc11dd2c45
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Basic dGhhcmFuaWJhbGFqZTozOWI4MWVlYTNkNWJlMWYwOGViNjg4MzQ0MTI3YmMwYjE2NWQxMTgz
+1 > Connection: Keep-Alive
+1 > Host: api.github.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+17:21:05.543 response time in milliseconds: 702.42
+1 < 404
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type
+1 < Content-Security-Policy: default-src 'none'
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 14 Aug 2019 15:21:09 GMT
+1 < Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+1 < Server: GitHub.com
+1 < Status: 404 Not Found
+1 < Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+1 < Transfer-Encoding: chunked
+1 < X-Accepted-OAuth-Scopes: repo
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: deny
+1 < X-GitHub-Media-Type: github.v3; format=json
+1 < X-GitHub-Request-Id: 55FB:30E3:1259D:185CA:5D5426E4
+1 < X-OAuth-Scopes: gist
+1 < X-RateLimit-Limit: 5000
+1 < X-RateLimit-Remaining: 4997
+1 < X-RateLimit-Reset: 1565799668
+1 < X-XSS-Protection: 1; mode=block
+{"message":"Not Found","documentation_url":"https://developer.github.com/v3/gists/#get-a-single-gist"}
+
+i.github.com/gists/b3124c4f7c714fd89f8d621ddc11dd2c45, response: {"message":"Bad credentials","documentation_url":"https://developer.github.com/v3"}
+com/v3/gists/#edit-a-gist"}
+
+13:54:41.985 status code was: 422, expected: 400, response time: 1349, url: https://api.github.com/gists/25dd0aee085e111b37d878ec74639f8e, response: {"message":"Invalid request.\n\nNo subschema in \"anyOf\" matched.\n\"description\" wasn't supplied.\n\"files\" wasn't supplied.","documentation_url":"https://developer.github.com/v3/gists/#edit-a-gist"}

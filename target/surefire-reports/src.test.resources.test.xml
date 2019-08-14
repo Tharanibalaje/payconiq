@@ -1,0 +1,226 @@
+<testsuite failures="0" name="src/test/resources/test.feature" skipped="0" tests="8" time="15.287636">
+  <testcase classname="src.test.resources.test" name="To verify a Read operation of all gists" time="1.514279">
+    <system-out>* url demoBaseUrl ......................................................... passed
+Given path '/gists' ....................................................... passed
+And header Authorization = authorization .................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.test" name="To verify a Create operation without authorization" time="1.423676">
+    <system-out>* url demoBaseUrl ......................................................... passed
+Given path '/gists' ....................................................... passed
+And header Authorization = authorization .................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url demoBaseUrl ......................................................... passed
+Given path '/gists' ....................................................... passed
+And request read('classpath:postResponse.json') ........................... passed
+When method POST .......................................................... passed
+Then status 401 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.test" name="To verify an Update operation without authorization" time="1.423731">
+    <system-out>* url demoBaseUrl ......................................................... passed
+Given path '/gists' ....................................................... passed
+And header Authorization = authorization .................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url demoBaseUrl ......................................................... passed
+Given path '/gists' ....................................................... passed
+And request read('classpath:postResponse.json') ........................... passed
+When method POST .......................................................... passed
+Then status 401 ........................................................... passed
+* url demoBaseUrl ......................................................... passed
+Given path '/gists/b3124c4f7c714fd89f8d621ddc11dd2c' ...................... passed
+And request read('classpath:putResponse.json') ............................ passed
+When method PATCH ......................................................... passed
+Then status 404 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.test" name="To verify an Delete operation without authorization" time="1.423697">
+    <system-out>* url demoBaseUrl ......................................................... passed
+Given path '/gists' ....................................................... passed
+And header Authorization = authorization .................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url demoBaseUrl ......................................................... passed
+Given path '/gists' ....................................................... passed
+And request read('classpath:postResponse.json') ........................... passed
+When method POST .......................................................... passed
+Then status 401 ........................................................... passed
+* url demoBaseUrl ......................................................... passed
+Given path '/gists/b3124c4f7c714fd89f8d621ddc11dd2c' ...................... passed
+And request read('classpath:putResponse.json') ............................ passed
+When method PATCH ......................................................... passed
+Then status 404 ........................................................... passed
+* url demoBaseUrl ......................................................... passed
+Given path '/gists/b3124c4f7c714fd89f8d621ddc11dd2c' ...................... passed
+When method DELETE ........................................................ passed
+Then status 404 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.test" name="To verify an create operation without request body" time="1.423461">
+    <system-out>* url demoBaseUrl ......................................................... passed
+Given path '/gists' ....................................................... passed
+And header Authorization = authorization .................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url demoBaseUrl ......................................................... passed
+Given path '/gists' ....................................................... passed
+And request read('classpath:postResponse.json') ........................... passed
+When method POST .......................................................... passed
+Then status 401 ........................................................... passed
+* url demoBaseUrl ......................................................... passed
+Given path '/gists/b3124c4f7c714fd89f8d621ddc11dd2c' ...................... passed
+And request read('classpath:putResponse.json') ............................ passed
+When method PATCH ......................................................... passed
+Then status 404 ........................................................... passed
+* url demoBaseUrl ......................................................... passed
+Given path '/gists/b3124c4f7c714fd89f8d621ddc11dd2c' ...................... passed
+When method DELETE ........................................................ passed
+Then status 404 ........................................................... passed
+* url demoBaseUrl ......................................................... passed
+Given path '/gists' ....................................................... passed
+And header Authorization = authorization .................................. passed
+And request {} ............................................................ passed
+When method POST .......................................................... passed
+Then status 422 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.test" name="To verify an patch operation without body" time="0.707411">
+    <system-out>* url demoBaseUrl ......................................................... passed
+Given path '/gists' ....................................................... passed
+And header Authorization = authorization .................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url demoBaseUrl ......................................................... passed
+Given path '/gists' ....................................................... passed
+And request read('classpath:postResponse.json') ........................... passed
+When method POST .......................................................... passed
+Then status 401 ........................................................... passed
+* url demoBaseUrl ......................................................... passed
+Given path '/gists/b3124c4f7c714fd89f8d621ddc11dd2c' ...................... passed
+And request read('classpath:putResponse.json') ............................ passed
+When method PATCH ......................................................... passed
+Then status 404 ........................................................... passed
+* url demoBaseUrl ......................................................... passed
+Given path '/gists/b3124c4f7c714fd89f8d621ddc11dd2c' ...................... passed
+When method DELETE ........................................................ passed
+Then status 404 ........................................................... passed
+* url demoBaseUrl ......................................................... passed
+Given path '/gists' ....................................................... passed
+And header Authorization = authorization .................................. passed
+And request {} ............................................................ passed
+When method POST .......................................................... passed
+Then status 422 ........................................................... passed
+* url demoBaseUrl ......................................................... passed
+Given path '/gists/b3124c4f7c714fd89f8d621ddc11dd2c' ...................... passed
+And header Authorization = authorization .................................. passed
+And request {} ............................................................ passed
+When method PATCH ......................................................... passed
+Then status 422 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.test" name="To verify get operation with authorization unknown gist" time="0.708156">
+    <system-out>* url demoBaseUrl ......................................................... passed
+Given path '/gists' ....................................................... passed
+And header Authorization = authorization .................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url demoBaseUrl ......................................................... passed
+Given path '/gists' ....................................................... passed
+And request read('classpath:postResponse.json') ........................... passed
+When method POST .......................................................... passed
+Then status 401 ........................................................... passed
+* url demoBaseUrl ......................................................... passed
+Given path '/gists/b3124c4f7c714fd89f8d621ddc11dd2c' ...................... passed
+And request read('classpath:putResponse.json') ............................ passed
+When method PATCH ......................................................... passed
+Then status 404 ........................................................... passed
+* url demoBaseUrl ......................................................... passed
+Given path '/gists/b3124c4f7c714fd89f8d621ddc11dd2c' ...................... passed
+When method DELETE ........................................................ passed
+Then status 404 ........................................................... passed
+* url demoBaseUrl ......................................................... passed
+Given path '/gists' ....................................................... passed
+And header Authorization = authorization .................................. passed
+And request {} ............................................................ passed
+When method POST .......................................................... passed
+Then status 422 ........................................................... passed
+* url demoBaseUrl ......................................................... passed
+Given path '/gists/b3124c4f7c714fd89f8d621ddc11dd2c' ...................... passed
+And header Authorization = authorization .................................. passed
+And request {} ............................................................ passed
+When method PATCH ......................................................... passed
+Then status 422 ........................................................... passed
+* url demoBaseUrl ......................................................... passed
+Given path '/gists/b3124c4f7c714fd89f8d621ddc11dd2c45' .................... passed
+And header Authorization = authorization .................................. passed
+When method GET ........................................................... passed
+Then status 404 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.test" name="To verify CRUD operations, a new gist is Created, Read, update and delete the gist" time="6.663225">
+    <system-out>* url demoBaseUrl ......................................................... passed
+Given path '/gists' ....................................................... passed
+And header Authorization = authorization .................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url demoBaseUrl ......................................................... passed
+Given path '/gists' ....................................................... passed
+And request read('classpath:postResponse.json') ........................... passed
+When method POST .......................................................... passed
+Then status 401 ........................................................... passed
+* url demoBaseUrl ......................................................... passed
+Given path '/gists/b3124c4f7c714fd89f8d621ddc11dd2c' ...................... passed
+And request read('classpath:putResponse.json') ............................ passed
+When method PATCH ......................................................... passed
+Then status 404 ........................................................... passed
+* url demoBaseUrl ......................................................... passed
+Given path '/gists/b3124c4f7c714fd89f8d621ddc11dd2c' ...................... passed
+When method DELETE ........................................................ passed
+Then status 404 ........................................................... passed
+* url demoBaseUrl ......................................................... passed
+Given path '/gists' ....................................................... passed
+And header Authorization = authorization .................................. passed
+And request {} ............................................................ passed
+When method POST .......................................................... passed
+Then status 422 ........................................................... passed
+* url demoBaseUrl ......................................................... passed
+Given path '/gists/b3124c4f7c714fd89f8d621ddc11dd2c' ...................... passed
+And header Authorization = authorization .................................. passed
+And request {} ............................................................ passed
+When method PATCH ......................................................... passed
+Then status 422 ........................................................... passed
+* url demoBaseUrl ......................................................... passed
+Given path '/gists/b3124c4f7c714fd89f8d621ddc11dd2c45' .................... passed
+And header Authorization = authorization .................................. passed
+When method GET ........................................................... passed
+Then status 404 ........................................................... passed
+* url demoBaseUrl ......................................................... passed
+Given path '/gists' ....................................................... passed
+And header Authorization = authorization .................................. passed
+And request read('classpath:postResponse.json') ........................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+* def gistId = $.id ....................................................... passed
+* print gistId ............................................................ passed
+* def gistResponse = $ .................................................... passed
+Given path '/gists/'+gistId ............................................... passed
+When method GET ........................................................... passed
+And header Authorization = authorization .................................. passed
+Then status 200 ........................................................... passed
+And match $.git_pull_url contains gistResponse.git_pull_url ............... passed
+Given path '/gists/'+gistId ............................................... passed
+And header Authorization = authorization .................................. passed
+And request read('classpath:putResponse.json') ............................ passed
+When method PATCH ......................................................... passed
+Then status 200 ........................................................... passed
+Given path '/gists/'+gistId ............................................... passed
+And header Authorization = authorization .................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+Given path '/gists/'+gistId ............................................... passed
+And header Authorization = authorization .................................. passed
+When method DELETE ........................................................ passed
+Then status 204 ........................................................... passed
+Given path '/gists/'+gistId ............................................... passed
+And header Authorization = authorization .................................. passed
+When method GET ........................................................... passed
+Then status 404 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>
